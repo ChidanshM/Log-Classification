@@ -1,0 +1,121 @@
+log,label
+Failed login attempt for user admin from IP 10.0.0.12,authentication_failure
+Invalid credentials provided by user root,authentication_failure
+Authentication failed: token signature invalid,authentication_failure
+User login blocked after 5 failed attempts,authentication_failure
+SSH authentication error for user ubuntu,authentication_failure
+OAuth2 login rejected: expired refresh token,authentication_failure
+LDAP bind failure for user service_account,authentication_failure
+Login attempt denied due to disabled account,authentication_failure
+Kerberos authentication failure: ticket expired,authentication_failure
+MFA verification failed for user john.doe,authentication_failure
+
+User admin successfully logged in,authentication_success
+Authentication succeeded for user root,authentication_success
+User john.doe authenticated via SSO,authentication_success
+MFA challenge completed successfully,authentication_success
+API token validated for service client,authentication_success
+OAuth login successful for user alice,authentication_success
+SSH login accepted from 192.168.1.55,authentication_success
+Kerberos ticket granted for user agent01,authentication_success
+User session created successfully,authentication_success
+Login successful using password authentication,authentication_success
+
+GET /api/v1/users returned status 500,api_error
+POST /api/v2/orders failed: internal server error,api_error
+API error: invalid request payload format,api_error
+PUT /api/v1/payment returned 409 conflict,api_error
+API responded with malformed JSON payload,api_error
+DELETE /api/v1/cart returned 502 bad gateway,api_error
+API gateway encountered parsing failure,api_error
+POST /auth/token returned error: bad signature,api_error
+GET /api/v1/search crashed unexpectedly,api_error
+Unexpected API exception thrown by endpoint /v3/files,api_error
+
+GET /api/v1/healthcheck,api_request
+POST /api/v1/login,api_request
+PATCH /api/v1/user/42,api_request
+DELETE /api/v1/cart/1,api_request
+GET /api/v2/products?limit=10,api_request
+PUT /api/v3/settings/theme=dark,api_request
+HEAD /api/v1/status,api_request
+OPTIONS /api,api_request
+POST /auth/refresh,api_request
+GET /v1/metrics/server,api_request
+
+Configuration file missing required field 'server_port',configuration_error
+Invalid configuration: unsupported TLS version,configuration_error
+Failed to load config: malformed YAML syntax,configuration_error
+Service crashed due to bad environment variable,configuration_error
+Incorrect file permissions in config directory,configuration_error
+Unknown config parameter 'max_worker_pool',configuration_error
+App failed to start: invalid feature flag,configuration_error
+Configuration mismatch detected between nodes,configuration_error
+Config reload failed: checksum mismatch,configuration_error
+Error parsing JSON config section 'database',configuration_error
+
+Database connection timeout occurred,database_error
+Failed to connect to PostgreSQL instance,database_error
+Query execution failed: syntax error near SELECT,database_error
+MongoDB write failed: duplicate key error,database_error
+Redis connection dropped unexpectedly,database_error
+Transaction aborted: deadlock detected,database_error
+MySQL server refused connection: max connections reached,database_error
+Database migration failed on step 3,database_error
+SQLite lock timeout waiting for write,database_error
+Database replication lag critical,database_error
+
+File not found: /var/data/report.csv,filesystem_error
+Permission denied while reading /etc/hosts,filesystem_error
+Could not write to /tmp/cache.tmp: disk full,filesystem_error
+Directory /opt/data is not accessible,filesystem_error
+File descriptor leaked by worker process,filesystem_error
+Unable to create directory due to read-only FS,filesystem_error
+File upload failed: corrupted chunk detected,filesystem_error
+FS error: symbolic link loop encountered,filesystem_error
+Unable to delete /logs/archive.tar.gz,filesystem_error
+Filesystem consistency check failed overnight,filesystem_error
+
+Network unreachable while contacting 10.1.1.5,network_error
+Connection reset by peer during handshake,network_error
+Packet loss exceeded 80% on interface eth0,network_error
+DNS resolution failed for service backend,network_error
+Network timeout while fetching remote header,network_error
+TCP connection aborted unexpectedly,network_error
+High latency detected between nodes,network_error
+SSL handshake failed due to network dropout,network_error
+Route to gateway 10.0.0.1 is unavailable,network_error
+Network congestion detected across cluster,network_error
+
+Out of memory while processing request,resource_exhaustion
+Disk quota exceeded for user backup_admin,resource_exhaustion
+Thread pool exhausted: no workers available,resource_exhaustion
+Service refused request: memory pressure too high,resource_exhaustion
+Worker failed due to CPU starvation,resource_exhaustion
+Container cannot allocate additional RAM,resource_exhaustion
+Too many open file handles in process,resource_exhaustion
+Job scheduler overloaded with tasks,resource_exhaustion
+Cache eviction storm due to low space,resource_exhaustion
+Process killed by OOM killer,resource_exhaustion
+
+Unauthorized access attempt detected,security_alert
+Malware signature found in uploaded file,security_alert
+Multiple failed admin logins from unknown region,security_alert
+Suspicious token reuse detected,security_alert
+Firewall detected port scanning behavior,security_alert
+Intrusion prevention triggered block rule,security_alert
+Untrusted binary execution attempt blocked,security_alert
+Anomalous login pattern detected,security_alert
+Access to restricted endpoint denied,security_alert
+Certificate validation failure indicates tampering,security_alert
+
+Service timeout after waiting 30 seconds,service_timeout
+Request to billing service exceeded timeout,service_timeout
+Task execution timed out after retry,service_timeout
+Upstream service did not respond in time,service_timeout
+Timeout contacting authentication provider,service_timeout
+Background job exceeded max runtime limit,service_timeout
+API request stalled and timed out,service_timeout
+Database read timed out due to delay,service_timeout
+Health check probe timed out repeatedly,service_timeout
+Connection to worker node timed out,service_timeout

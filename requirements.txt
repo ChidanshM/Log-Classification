@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic-settings
+scikit-learn
+sentence-transformers
+pandas
+numpy
+openai
+python-dotenv
+google-genai
+python-multipart
+pytest
+
