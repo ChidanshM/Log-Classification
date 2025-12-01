@@ -40,6 +40,8 @@ class HybridClassifier:
 
         # --- 2. ML stage ---
         ml_label, ml_conf = self.ml.predict(message)
+        print("ML Label: ", ml_label)
+        print("ML Confidence: ", ml_conf)
         if ml_conf >= settings.ML_CONFIDENCE:
             return {
                 "label": ml_label,
