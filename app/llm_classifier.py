@@ -21,7 +21,7 @@ class LLMClassifier:
     - Confidence calibration
     """
     
-    def __init__(self, model_name: str = "models/gemini-2.5-flash"):
+    def __init__(self, model_name: str = "models/gemini-2.5-flash-lite"):
         api_key = os.getenv("GEMINI_API_KEY")
 
         if not api_key:

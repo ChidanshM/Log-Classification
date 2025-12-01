@@ -64,13 +64,13 @@ def evaluate(csv_path: str, text_col: str, label_col: str):
         y_pred.append(pred_label)
         used_layer.append(layer)
 
-    print("\n================ HYBRID SYSTEM EVALUATION ================\n")
+    print("\n HYBRID SYSTEM EVALUATION n")
     print(classification_report(y_true, y_pred))
 
-    print("\n================ LAYER USAGE BREAKDOWN ==================\n")
+    print("\n LAYER USAGE BREAKDOWN ==\n")
     print(pd.Series(used_layer).value_counts())
 
-    print("\n================ CONFUSION MATRIX ==================\n")
+    print("\n CONFUSION MATRIX n")
     print(confusion_matrix(y_true, y_pred))
 
 

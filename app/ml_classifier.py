@@ -6,11 +6,12 @@ import os
 
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 
 from app.config import settings
 from app.feature_extractor import LogFeatureExtractor
+from app.utils import preprocess_log
 
 
 # Load the embedding model ONCE (faster)
@@ -33,9 +34,9 @@ class MLClassifier:
     """
 
     def __init__(self):
-        # Load logistic regression model
+        # Load Random Forest model
         with open(settings.LR_MODEL_PATH, "rb") as f:
-            self.model: LogisticRegression = pickle.load(f)
+            self.model: RandomForestClassifier = pickle.load(f)
 
         # Load label encoder
         with open(settings.LABEL_ENCODER_PATH, "rb") as f:
@@ -58,7 +59,9 @@ class MLClassifier:
             confidence: float (0.0 - 1.0)
         """
         # Get sentence embedding (384 dimensions)
-        embedding = self.encoder.encode([text])  # shape = (1, 384)
+        # Preprocess text for embedding (masking IDs)
+        preprocessed_text = preprocess_log(text)
+        embedding = self.encoder.encode([preprocessed_text])  # shape = (1, 384)
         embedding_np = np.array(embedding)
         
         # Extract handcrafted features if model expects them

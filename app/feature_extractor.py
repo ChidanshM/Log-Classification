@@ -30,6 +30,12 @@ class LogFeatureExtractor:
             'config', 'configuration', 'service', 'cluster'
         ]
         
+        # HDFS-specific keywords
+        self.hdfs_keywords = [
+            'namesystem', 'blockmap', 'packetresponder', 'datanode', 'namenode',
+            'dfs', 'hadoop', 'exception', 'stacktrace', 'replicat', 'terminat'
+        ]
+        
         # Severity keywords
         self.severity_keywords = {
             'critical': ['critical', 'fatal', 'emergency', 'panic'],
@@ -68,6 +74,15 @@ class LogFeatureExtractor:
         # SERVICE/COMPONENT INDICATORS
         for keyword in self.service_keywords:
             features.append(1 if keyword in text.lower() else 0)
+            
+        # HDFS INDICATORS
+        for keyword in self.hdfs_keywords:
+            features.append(1 if keyword in text.lower() else 0)
+            
+        # HDFS PATTERNS
+        features.append(1 if re.search(r'blk_[-0-9]+', text) else 0) # Block ID
+        features.append(1 if re.search(r'src:\s*/', text) else 0) # Source IP pattern
+        features.append(1 if re.search(r'dest:\s*/', text) else 0) # Dest IP pattern
         
         # NETWORK INDICATORS
         features.append(1 if re.search(r'\b(?:\d{1,3}\.){3}\d{1,3}\b', text) else 0)  # IP address
@@ -118,6 +133,8 @@ class LogFeatureExtractor:
         ]
         
         names.extend([f'service_{kw}' for kw in self.service_keywords])
+        names.extend([f'hdfs_{kw}' for kw in self.hdfs_keywords])
+        names.extend(['has_block_id', 'has_src_ip', 'has_dest_ip'])
         
         names.extend(['has_ip_address', 'has_port', 'has_url',
                      'has_file_path', 'has_file_extension'])

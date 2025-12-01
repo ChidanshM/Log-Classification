@@ -15,6 +15,6 @@ class Settings(BaseSettings):
 
     # LLM
     GEMINI_API_KEY: str = ""
-    LLM_MODEL_NAME: str = "models/gemini-2.5-flash"
+    LLM_MODEL_NAME: str = "models/gemini-2.5-flash-lite"
 
 settings = Settings()

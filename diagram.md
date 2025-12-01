@@ -19,7 +19,9 @@ flowchart LR
 
         subgraph Layer2["ML Classifier"]
             E[Sentence Embeddings]:::hybrid
-            F[Logistic Regression]:::hybrid
+            F[Handcrafted Log Features]:::hybrid
+            X[Feature Fusion]:::hybrid
+            Y[Random Forest Ensemble]:::hybrid
         end
 
         subgraph Layer3["LLM Fallback"]
@@ -45,8 +47,10 @@ flowchart LR
     H --> D
     D -->|High Confidence| N:::connector
     D -->|No Rule Match| E
-
-    E --> F --> H
+    C --> F
+    E --> X
+    F --> X
+    X --> Y --> H
     H -->|ML Confident| N
     H -->|ML Uncertain| G --> N
 

@@ -35,8 +35,16 @@ def train(csv_path: str, text_col: str, label_col: str):
     min_test_ratio = num_classes / len(y)
     test_size = max(0.2, min_test_ratio)
 
+    # Check for rare classes
+    class_counts = pd.Series(y).value_counts()
+    if class_counts.min() < 2:
+        print("Warning: Some classes have fewer than 2 samples. Disabling stratification.")
+        stratify_param = None
+    else:
+        stratify_param = y
+
     X_train, X_val, y_train, y_val = train_test_split(
-        X, y, test_size=test_size, random_state=42, stratify=y
+        X, y, test_size=test_size, random_state=42, stratify=stratify_param
     )
 
     # Train model
@@ -46,7 +54,13 @@ def train(csv_path: str, text_col: str, label_col: str):
     # Validation metrics
     preds = model.predict(X_val)
     print("\nValidation Performance:\n")
-    print(classification_report(y_val, preds, target_names=le.classes_))
+    print(classification_report(
+        y_val, 
+        preds, 
+        labels=range(len(le.classes_)), 
+        target_names=le.classes_, 
+        zero_division=0
+    ))
 
     # ==== Create model directory if missing ====
     os.makedirs(os.path.dirname(settings.LR_MODEL_PATH), exist_ok=True)
