@@ -1,5 +1,3 @@
-# app/log_parser.py
-
 from typing import Dict, Any
 
 try:

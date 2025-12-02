@@ -17,61 +17,61 @@ def load_csv(csv_path: str, text_col: str, label_col: str):
 
     try:
         # First try normal read
-        df = pd.read_csv(csv_path)
+        table = pd.read_csv(csv_path)
     except Exception:
-        # Fallback: try auto-detect separator
-        df = pd.read_csv(csv_path, sep=None, engine="python")
+        # Fallback: auto-detect separator
+        table = pd.read_csv(csv_path, sep=None, engine="python")
 
     # If expected columns NOT found → assume headerless file
-    if text_col not in df.columns or label_col not in df.columns:
+    if text_col not in table.columns or label_col not in table.columns:
         print(f"[WARN] Columns '{text_col}' and '{label_col}' not found. "
               f"Assuming the CSV has NO HEADER.")
 
-        df = pd.read_csv(
+        table = pd.read_csv(
             csv_path,
             header=None,
             names=[text_col, label_col]
         )
 
-    return df[[text_col, label_col]].dropna()
+    return table[[text_col, label_col]].dropna()
 
 
 def evaluate(csv_path: str, text_col: str, label_col: str):
-    df = load_csv(csv_path, text_col, label_col)
+    records = load_csv(csv_path, text_col, label_col)
 
-    clf = HybridClassifier()
+    classifier = HybridClassifier()
 
-    y_true = []
-    y_pred = []
-    used_layer = []  # Store which model classified the log
+    actual_tags = []
+    predicted_tags = []
+    model_layer_used = []  # Which layer classified the log
 
-    print(f"\nLoaded {len(df)} evaluation samples.")
-    print(f"Columns: {df.columns.tolist()}")
+    print(f"\nLoaded {len(records)} evaluation samples.")
+    print(f"Columns: {records.columns.tolist()}")
 
-    for _, row in df.iterrows():
-        true_label = row[label_col]
-        log_text = row[text_col]
+    for _, entry in records.iterrows():
+        true_tag = entry[label_col]
+        log_msg = entry[text_col]
 
         try:
-            result = clf.classify(log_text)
-            pred_label = result["label"]
-            layer = result.get("source", "unknown")
-        except Exception as e:
-            pred_label = "error"
-            layer = "error"
+            outcome = classifier.classify(log_msg)
+            guess_tag = outcome["label"]
+            layer_name = outcome.get("source", "unknown")
+        except Exception:
+            guess_tag = "error"
+            layer_name = "error"
 
-        y_true.append(true_label)
-        y_pred.append(pred_label)
-        used_layer.append(layer)
+        actual_tags.append(true_tag)
+        predicted_tags.append(guess_tag)
+        model_layer_used.append(layer_name)
 
-    print("\n HYBRID SYSTEM EVALUATION n")
-    print(classification_report(y_true, y_pred))
+    print("\n HYBRID SYSTEM EVALUATION \n")
+    print(classification_report(actual_tags, predicted_tags))
 
-    print("\n LAYER USAGE BREAKDOWN ==\n")
-    print(pd.Series(used_layer).value_counts())
+    print("\n LAYER USAGE BREAKDOWN \n")
+    print(pd.Series(model_layer_used).value_counts())
 
-    print("\n CONFUSION MATRIX n")
-    print(confusion_matrix(y_true, y_pred))
+    print("\n CONFUSION MATRIX \n")
+    print(confusion_matrix(actual_tags, predicted_tags))
 
 
 if __name__ == "__main__":

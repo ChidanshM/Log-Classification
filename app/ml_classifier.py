@@ -1,5 +1,3 @@
-# app/ml_classifier.py
-
 import pickle
 from typing import Tuple, Optional
 import os

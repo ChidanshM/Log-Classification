@@ -17,10 +17,10 @@ class RegexClassifier:
     """
 
     def __init__(self):
-        # Rules are ordered by priority: most specific first
+        # priority for rules (from high to low)
         self.rules = [
             
-            #  AUTHENTICATION FAILURE 
+            # auth failure
             # High-priority auth failure patterns
             (re.compile(
                 r"(?:failed login|login failed|authentication failed|"
@@ -31,8 +31,8 @@ class RegexClassifier:
                 re.I
             ), "authentication_failure", 1.0),
             
-            # AUTHENTICATION SUCCESS 
-            # High-priority auth success patterns
+            # sucess authentication
+            
             (re.compile(
                 r"(?:success(?:ful(?:ly)?)? authenticat(?:ed|ion)|"
                 r"authenticat(?:ed|ion) succeed(?:ed)?|"
@@ -42,8 +42,7 @@ class RegexClassifier:
                 re.I
             ), "authentication_success", 1.0),
             
-            # SECURITY ALERT 
-            # Security takes priority over other categories
+            # security alert
             (re.compile(
                 r"(?:security alert|unauthorized access|"
                 r"privilege escalation|malware|"
@@ -55,8 +54,7 @@ class RegexClassifier:
                 re.I
             ), "security_alert", 1.0),
             
-            # API ERROR 
-            # Specific API errors (before generic API requests)
+            # Api failures
             (re.compile(
                 r"(?:api (?:error|exception|crash(?:ed)?|timeout)|"
                 r"(?:GET|POST|PUT|DELETE|PATCH).*(?:error|crash(?:ed)?|returned error|failed)|"
@@ -67,8 +65,7 @@ class RegexClassifier:
                 re.I
             ), "api_error", 0.95),
             
-            # DATABASE ERROR 
-            # Specific database errors
+            # db errors
             (re.compile(
                 r"(?:database (?:connection (?:refused|failed)|unreachable|error|migration failed)|"
                 r"sql (?:error|syntax)|"
@@ -80,7 +77,7 @@ class RegexClassifier:
                 re.I
             ), "database_error", 0.95),
             
-            # RESOURCE EXHAUSTION 
+            # resources
             (re.compile(
                 r"(?:out of memory|oom(?:[ -]killed)?|"
                 r"memory (?:allocation failure|exhaustion|critically low)|"
@@ -95,7 +92,7 @@ class RegexClassifier:
                 re.I
             ), "resource_exhaustion", 0.95),
             
-            # FILESYSTEM ERROR 
+            # fs errors
             (re.compile(
                 r"(?:filesystem (?:error|inconsisten(?:cy|t))|"
                 r"(?:disk quota|no space left|permission denied)|"
@@ -106,7 +103,7 @@ class RegexClassifier:
                 re.I
             ), "filesystem_error", 0.95),
             
-            # NETWORK ERROR 
+            #network errors
             (re.compile(
                 r"(?:network (?:unreachable|timeout|congestion|error)|"
                 r"connection (?:reset|refused|aborted)|"
@@ -121,7 +118,7 @@ class RegexClassifier:
                 re.I
             ), "network_error", 0.95),
             
-            # SERVICE TIMEOUT 
+            # service timeout
             (re.compile(
                 r"(?:(?:request|service|operation|connection|task|health probe) (?:timed out|timeout)|"
                 r"timeout (?:contacting|accessing|after|reaching)|"
@@ -131,7 +128,7 @@ class RegexClassifier:
                 re.I
             ), "service_timeout", 0.95),
             
-            # CONFIGURATION ERROR 
+            # conf errors
             (re.compile(
                 r"(?:configuration (?:error|mismatch|missing)|"
                 r"(?:missing|invalid|unknown|unsupported) (?:key|field|parameter|configuration)|"
@@ -143,7 +140,7 @@ class RegexClassifier:
                 re.I
             ), "configuration_error", 0.95),
             
-            # API REQUEST 
+            #api requests
             (re.compile(
                 r"(?:incoming request|"
                 r"(?:GET|POST|PUT|DELETE|PATCH|OPTIONS|HEAD) (?:/|\\w+/).*(?:initiated|received|from|processed|started|check executed))",
