@@ -2,4 +2,4 @@ venv
 /.env
 /env
 .env
-__pycache__/
+/app/__pycache__/
