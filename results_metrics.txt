@@ -1,0 +1,27 @@
+HYBRID SYSTEM EVALUATION
+                        precision    recall  f1-score   support
+
+             api_error       1.00      1.00      1.00        23
+           api_request       0.96      0.95      0.96       407
+authentication_failure       1.00      1.00      1.00        30
+authentication_success       1.00      1.00      1.00        26
+   configuration_error       1.00      1.00      1.00        23
+        database_error       1.00      1.00      1.00        22
+      filesystem_error       0.83      0.84      0.83       140
+         network_error       0.96      0.97      0.96       177
+   resource_exhaustion       1.00      1.00      1.00        20
+        security_alert       1.00      1.00      1.00        22
+       service_timeout       0.95      1.00      0.98        21
+
+              accuracy                           0.95       911
+             macro avg       0.97      0.98      0.98       911
+          weighted avg       0.95      0.95      0.95       911
+
+
+LAYER USAGE BREAKDOWN
+llm      561
+regex    225
+ml       125
+
+CONFUSION MATRIX
+[[23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 387, 0, 0, 0, 0, 20, 0, 0, 0, 0], [0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0], [0, 15, 0, 0, 0, 0, 117, 8, 0, 0, 0], [0, 0, 0, 0, 0, 0, 4, 172, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21]]
