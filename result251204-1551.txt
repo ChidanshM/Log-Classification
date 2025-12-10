@@ -1,0 +1,1823 @@
+[WARN] Columns 'LogText' and 'Label' not found. Assuming the CSV has NO HEADER.
+
+Loaded 912 evaluation samples.
+Columns: ['LogText', 'Label']
+ML Label:  network_error
+ML Confidence:  0.21772859362605107
+{"label": "api_request", "confidence": 0.65, "explanation": "Generic log message, could be an API request."}
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  api_request
+ML Confidence:  0.43170118861970885
+{"label": "api_request", "confidence": 0.7, "explanation": "Log message describes the reception of a block, which is a common event in data transfer or API interactions, but lacks specific error indicators."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+{"label": "network_error", "confidence": 0.75, "explanation": "The log mentions 'PacketResponder' and 'block', which can indicate network communication issues or packet-related problems, fitting the network_error category."}
+ML Label:  network_message
+ML Confidence:  0.3243823689041712
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message indicates the reception of data ('block') from a specific network address, which is characteristic of a data transfer or API interaction, rather than an error or system event."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999648
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to be a record of a successful data transfer or receipt, which is typical of an API request or internal service communication handling data. It doesn't fit the negative patterns of errors, authentication, or security alerts. The size and source information suggest a data operation. While not explicitly an HTTP method, it represents a form of service interaction."}
+ML Label:  api_request
+ML Confidence:  0.4758119131757486
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to represent a data transfer or communication event within a system, potentially an API or internal service interaction, but lacks specific error indicators for other categories. It describes receiving a 'block' from a source to a destination, which aligns with data flow in a request/response or internal message passing context."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network packets suggests a network-related issue, possibly a dropped or failed packet response."}
+```
+ML Label:  api_request
+ML Confidence:  0.5026421413092016
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "The log message describes receiving a block, which is a common operation in data transfer protocols, often initiated by an API request. It doesn't clearly indicate an error or a specific system event, making it most likely a normal request/operation."}
+```
+ML Label:  api_request
+ML Confidence:  0.5507053664059256
+{"label": "api_request", "confidence": 0.7, "explanation": "Log indicates receiving data blocks, which can be part of a larger data transfer or API operation. It's not an error, but a transaction detail."}
+ML Label:  api_request
+ML Confidence:  0.47087038301248435
+{"label": "api_request", "confidence": 0.7, "explanation": "The log message describes receiving a block, which is a common operation in data processing or distributed systems, often initiated via an API or a similar protocol."}
+ML Label:  network_traffic
+ML Confidence:  0.5293627608699881
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "Indicates a data transfer or communication event, similar to a data-centric API interaction."}
+```
+ML Label:  api_request
+ML Confidence:  0.4375360219758816
+{"label": "api_request", "confidence": 0.70, "explanation": "This log message appears to describe a data transfer operation between network addresses and ports, which is characteristic of a network-level API or service interaction. It doesn't fit clearly into error categories."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data, consistent with a component of a larger API interaction or data transfer, but lacks specific API error or authentication context."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in conjunction with network-related terms suggests a network communication issue or failure."}
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+{"label": "api_request", "confidence": 0.70, "explanation": "This log message describes receiving data, which could be part of a larger data transfer or API operation. It doesn't explicitly indicate an error or a specific type of success, but it's closer to a normal operation than any other category."}
+ML Label:  api_request
+ML Confidence:  0.588238327690504
+{"label": "api_request", "confidence": 0.75, "explanation": "This message describes the reception of data blocks between network endpoints, which is indicative of an ongoing data transfer operation, likely part of an API interaction or service communication. It doesn't explicitly state an error or success condition, nor does it fit other specific error categories like network, database, or authentication. While it's not a standard HTTP API call, it represents a functional data exchange often facilitated by APIs or services."}
+ML Label:  network_error
+ML Confidence:  0.7712761193330416
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  network_error
+ML Confidence:  0.8955183946211801
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_activity
+ML Confidence:  0.499533204996007
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  api_request
+ML Confidence:  0.42652930370453296
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+{"label": "network_error", "confidence": 0.90, "explanation": "Indicates a network responder is terminating, suggesting a potential network issue or disconnection."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211801
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message describes receiving data, which is a common aspect of API interactions or data transfer protocols. It doesn't clearly fit other specific categories like errors or authentication."}
+```
+ML Label:  block_received
+ML Confidence:  0.2445354444362149
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data, likely part of an API interaction or data transfer process. It's not a direct error or authentication event."}
+```
+ML Label:  network_traffic
+ML Confidence:  0.5444295213441869
+{"label": "api_request", "confidence": 0.80, "explanation": "This log message describes receiving a block of data, which is typical of a data transfer or API interaction between services, rather than a distinct error or authentication event. It doesn't fit any error categories or authentication categories and is most aligned with a general request/operation."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates reception of data, which is a normal operational event likely related to an API interaction, but not explicitly an error or authentication event."}
+```
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates receiving a block of data, which is a common aspect of data processing or API interaction, but not a direct error or security event."}
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message describes receiving a data block, which is typical of an API or service interaction, but lacks specific error indicators."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.65, "explanation": "Log message appears to be a normal data transfer message, potentially related to an API interaction or service communication."}
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes an update to a block map, which is a typical operation within a distributed file system or storage service. The format suggests an internal API call or system operation rather than a clear error or authentication event."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message refers to block operations within a NameSystem, which typically interact with the filesystem to store and manage data blocks. While not explicitly an error, it relates to low-level file/storage management."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates receiving a data block, which is a typical part of a data transfer API operation."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274226
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network communication often implies issues related to packet handling or network instability leading to a termination."}
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627417
+ML Label:  api_request
+ML Confidence:  0.6132503273507047
+{"label": "api_request", "confidence": 0.7, "explanation": "This log indicates receiving a block of data, which is a common event in distributed systems or data transfer operations, akin to a data processing API request. It does not fit clearly into other error or authentication categories."}
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  api_request
+ML Confidence:  0.47133906109374885
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to describe the reception of a data block, which is a common event in network-based services or APIs that transfer data. It doesn't clearly indicate an error or a specific security event."}
+ML Label:  block_received
+ML Confidence:  0.2445354444362149
+{"label": "api_request", "confidence": 0.65, "explanation": "This log appears to be a successful reception of data, possibly as part of a data transfer or API interaction, but lacks specific keywords for other categories."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Indicates a block being added to a filesystem-like system, potentially related to disk operations or block management."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  api_request
+ML Confidence:  0.41943169230218547
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  network_request
+ML Confidence:  0.36966067269630687
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333993
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833177
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627415
+ML Label:  resource_exhaustion
+ML Confidence:  0.6481822420364753
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  api_request
+ML Confidence:  0.6640572242686694
+ML Label:  block_received
+ML Confidence:  0.24453544443621497
+ML Label:  api_error
+ML Confidence:  0.2484032987958013
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.85, "explanation": "The log message mentions 'PacketResponder' and 'terminating', which often indicates a network-related issue where a packet responder is no longer functioning, possibly due to a network error."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message describes receiving data, potentially as part of a larger API interaction or data transfer process. It doesn't explicitly indicate an error, authentication issue, or resource problem. It's the closest fit to a general request/operation log."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.7, "explanation": "Indicates receiving data, potentially part of a larger API interaction. Less definitive than explicit HTTP method logs but fits the general pattern."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999656
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates reception of a data block, which is a common characteristic of data processing or API interactions. It's not explicitly an error or authentication event."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to describe a normal operation within a distributed file system or storage system, specifically related to adding a block to a storage location. While it's not a typical HTTP API call, it represents a successful operation on a system resource, similar to how an API request would log a successful operation."}
+ML Label:  api_request
+ML Confidence:  0.6585390112961842
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "Log indicates receiving a block, which is typical for P2P network communication often related to API interactions or data transfer protocols. It doesn't explicitly indicate an error or authentication event."}
+```
+ML Label:  network_error
+ML Confidence:  0.4923287340085867
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes receiving a 'block' which is characteristic of data transfer in network protocols, often associated with API-like interactions or data streaming, rather than a specific error or authentication event."}
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  api_request
+ML Confidence:  0.5269391089411345
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a normal network communication event, possibly related to data transfer within a service, which is analogous to an API request in terms of interaction between components."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' suggests a network-related issue with packet handling."}
+ML Label:  api_request
+ML Confidence:  0.514678050421763
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates receiving a data block, likely part of a larger service interaction or data transfer, not an error or authentication event."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.85, "explanation": "Log indicates receiving a data block, suggesting an ongoing data transfer or API interaction, not a specific error."}
+ML Label:  api_request
+ML Confidence:  0.46563308399626485
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving a block of data, which is a common part of data transfer or API operations, but not explicitly an error or authentication event."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024635
+{"label": "network_error", "confidence": 0.85, "explanation": "Log message indicates a network component ('PacketResponder') is terminating, suggesting a network-related issue or disconnection."}
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "Log indicates block storage operations, which are related to filesystem management."}
+ML Label:  block_received
+ML Confidence:  0.24994051874741569
+```json
+{"label": "api_request", "confidence": 0.85, "explanation": "This log appears to be a normal operation within a system, possibly related to data transfer or block processing, indicated by 'Received block' and a size. It doesn't fit the error, authentication, or security categories. While it could be part of a larger system API, it's a general data reception event. The confidence is moderate as it's not a standard HTTP API call, but rather a system-level data event."}
+```
+ML Label:  api_request
+ML Confidence:  0.6804784404830656
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to be a normal network communication event, potentially an API data transfer or block reception, without any error indicators. It most closely resembles a low-level API request or data exchange."}
+ML Label:  api_request
+ML Confidence:  0.361826124402682
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  api_request
+ML Confidence:  0.4712869687378397
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  api_request
+ML Confidence:  0.515889212847689
+ML Label:  network_error
+ML Confidence:  0.7712761193330414
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+ML Label:  api_request
+ML Confidence:  0.5766590869045808
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625997
+ML Label:  api_request
+ML Confidence:  0.6080071323488345
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  block_received
+ML Confidence:  0.24453544443621497
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  filesystem_error
+ML Confidence:  0.9342515919267723
+ML Label:  block_received
+ML Confidence:  0.24994051874741566
+ML Label:  network_error
+ML Confidence:  0.4961617561487104
+ML Label:  api_request
+ML Confidence:  0.4907980730126362
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates data transfer, potentially part of a larger API operation. Lacks specific error indicators for other categories."}
+ML Label:  api_request
+ML Confidence:  0.4628242476626376
+```json
+{"label": "api_request", "confidence": 0.80, "explanation": "Log indicates receiving data blocks, which can be part of a normal data transfer or API interaction, but is not definitively an error or authentication event."}
+```
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to be a record of a successful data transfer or API interaction, likely a 'receive' operation for a block of data, which falls under general API activity."}
+ML Label:  api_request
+ML Confidence:  0.49187135106405167
+{"label": "api_request", "confidence": 0.7, "explanation": "Log message indicates a data transfer operation, typical of an API or service communication. Lacks explicit error or authentication keywords."}
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log mentions block updates and paths which relate to filesystem operations, though not explicitly an error."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and the context of termination suggests a network-related issue impacting packet handling."}
+ML Label:  api_request
+ML Confidence:  0.6528619721975099
+{"label": "api_request", "confidence": 0.7, "explanation": "This message describes receiving data blocks which is a common operation in network-based services or APIs. It doesn't strongly indicate an error or specific security event."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'block' suggest network packet handling, and 'terminating' indicates a failure in that process, fitting a network error scenario."}
+```
+ML Label:  network_error
+ML Confidence:  0.4905668181622192
+{"label": "api_request", "confidence": 0.7, "explanation": "Log appears to indicate the reception of data, possibly from a network source, but lacks explicit error indicators. It's a neutral event that could be part of a normal API or service interaction."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receipt of data, possibly from an API or internal service communication, without explicit error or authentication information."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228245
+{"label": "network_error", "confidence": 0.75, "explanation": "Log message indicates a network-related component 'PacketResponder' terminating, suggesting a network issue or failure impacting its operation."}
+ML Label:  block_received
+ML Confidence:  0.24994051874741582
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message describes the reception of a data block, which is a common operation in distributed systems or data processing APIs. It doesn't fit other categories as clearly."}
+```
+ML Label:  api_request
+ML Confidence:  0.5672651569025112
+{"label": "api_request", "confidence": 0.7, "explanation": "The log message describes the reception of a 'block' which is likely data being transferred between services. The presence of source and destination IP addresses and ports suggests a network communication event, most akin to a data transfer or API interaction."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.95, "explanation": "The term 'PacketResponder' suggests network-related activity, and 'terminating' in this context often implies a failure or disconnection, commonly associated with network issues."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a normal data transfer notification, similar to a file or block receipt within a distributed system. It doesn't indicate an error, authentication issue, or resource problem. While it's not a typical HTTP API request, it represents a successful data reception event, which can be broadly categorized as a type of operational 'request' fulfillment."}
+ML Label:  api_request
+ML Confidence:  0.501115698267983
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to describe the reception of a data block, which is consistent with normal network or API communication, rather than an error or security event."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  api_request
+ML Confidence:  0.504899004719932
+ML Label:  api_request
+ML Confidence:  0.46475284721146165
+ML Label:  api_request
+ML Confidence:  0.7317446905400573
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.4707594035792346
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  api_request
+ML Confidence:  0.46959361874707317
+ML Label:  filesystem_error
+ML Confidence:  0.9459330945366418
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.7256529785627976
+ML Label:  api_request
+ML Confidence:  0.5076501352971279
+ML Label:  api_request
+ML Confidence:  0.7870030030144372
+ML Label:  api_request
+ML Confidence:  0.5537725043552328
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228242
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  network_error
+ML Confidence:  0.5307449723103922
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999645
+{"label": "api_request", "confidence": 0.80, "explanation": "This log indicates a successful reception of data, akin to a data transfer in an API context. It doesn't fit other categories as cleanly."}
+ML Label:  network_request
+ML Confidence:  0.3657326208784145
+{"label": "api_request", "confidence": 0.85, "explanation": "Log indicates receipt of data ('block') from a network address, which is characteristic of a service interaction or data transfer that could be part of an API or internal service communication."}
+ML Label:  network_request
+ML Confidence:  0.5335743811562421
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving a block, which is a common operation in distributed systems, often handled via API or network protocols. It doesn't indicate an error, failure, or specific security event. It's a normal operational message."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.90, "explanation": "This log message describes receiving a data block, which is a common event in data processing or API interactions. It does not indicate an error, authentication issue, configuration problem, or resource exhaustion. It's akin to a successful data transfer or an internal service communication, best fitting 'api_request' as a general data handling event."}
+ML Label:  api_request
+ML Confidence:  0.42873529067033656
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be an internal service communication message, potentially related to data transfer or synchronization within a distributed system. It doesn't fit clearly into other categories like authentication, errors, or resource issues. 'api_request' is the closest general category for inter-service communication that isn't an error."}
+ML Label:  api_request
+ML Confidence:  0.5258287976477244
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "This log indicates the reception of a data block within a network communication, which is characteristic of normal API or service-to-service data transfer."}
+```
+ML Label:  api_request
+ML Confidence:  0.5123892164861141
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message indicates receiving data blocks, which is characteristic of a data transfer or API interaction, but lacks specific error indicators."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+{"label": "network_error", "confidence": 0.85, "explanation": "Indicates a network responder terminating, often due to network issues like packet loss or connection problems."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+{"label": "network_error", "confidence": 0.75, "explanation": "Logs indicate a packet responder terminating, which can be associated with network communication issues."}
+ML Label:  network_error
+ML Confidence:  0.3737247843140645
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message indicates the reception of a data block, which is a common pattern in network-level communication or data transfer, often part of an API or service interaction. It doesn't strongly indicate an error, authentication event, configuration issue, or resource problem. While it's not a standard HTTP API request, it represents data movement which falls under the broader umbrella of API/service interactions."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333994
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in conjunction with network-related terms suggests a network component failure or disconnection."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates receiving a data block, which is a typical part of a data transfer API operation."}
+ML Label:  block_received
+ML Confidence:  0.24453544443621497
+{"label": "api_request", "confidence": 0.75, "explanation": "Log message indicates receipt of data, possibly as part of a larger API interaction or data transfer protocol, but not an explicit error or authentication event."}
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+{"label": "api_request", "confidence": 0.85, "explanation": "This log appears to be an internal system update or notification related to block storage, which can be considered a form of internal API call or data update operation rather than a user-facing API request, database, or error. It's closer to a system event log."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to describe the reception of a data block from a network address, which is consistent with a normal operational event of a service, possibly an API or data transfer service. It does not indicate an error, authentication event, configuration issue, or resource problem."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "Log message mentions 'block' and 'terminating', which can be associated with filesystem operations or data corruption."}
+ML Label:  api_request
+ML Confidence:  0.46293112409404896
+ML Label:  api_request
+ML Confidence:  0.5240554216338379
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999648
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  block_received
+ML Confidence:  0.2445354444362149
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  api_request
+ML Confidence:  0.6607972898666177
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  api_request
+ML Confidence:  0.4828620103117282
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  block_received
+ML Confidence:  0.24453544443621492
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  api_request
+ML Confidence:  0.6348245331961909
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to indicate a normal data transfer operation, which is a type of API request or internal service interaction. It doesn't fit clearly into other error or authentication categories."}
+```
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "Log message indicates a 'block' termination which can be related to filesystem operations or data corruption."}
+ML Label:  api_request
+ML Confidence:  0.5195029837608243
+{"label": "api_request", "confidence": 0.7, "explanation": "Log message describes a data transfer event, potentially part of a network service interaction, but lacks explicit error indicators. Classifying as a general API request for lack of more specific information."}
+ML Label:  api_request
+ML Confidence:  0.6332545434020891
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data blocks, typical of network communication related to data transfer or API interaction, but lacks explicit error or success indicators."}
+ML Label:  api_request
+ML Confidence:  0.5596115814846038
+{"label": "api_request", "confidence": 0.7, "explanation": "The log message indicates the reception of a data block, which is a common event in network communication or API-based data transfer. It doesn't explicitly state an error or a security concern."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+{"label": "network_error", "confidence": 0.85, "explanation": "PacketResponder and block termination suggests a network-related issue or a failure in network communication handling."}
+ML Label:  api_request
+ML Confidence:  0.6322062169770275
+{"label": "api_request", "confidence": 0.7, "explanation": "Log describes receiving a data block, potentially part of a larger API interaction or data transfer. Lacks explicit error indicators."}
+ML Label:  block_received
+ML Confidence:  0.24453544443621497
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message describes the reception of a data block, which is a typical event in data transfer protocols, often part of a larger API or service interaction. It doesn't fit the specific error categories and is not an authentication or security event."}
+```
+ML Label:  service_request
+ML Confidence:  0.10379609130335506
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions 'addStoredBlock' and a block identifier, which are typically related to file system operations or distributed storage systems. Without more context, it's difficult to be certain, but it's more aligned with filesystem operations than other categories. It's not a direct error, but the nature of block management could fall under this umbrella if there were underlying issues."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211807
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605862
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+{"label": "network_error", "confidence": 0.90, "explanation": "Log message indicates a packet responder terminating, which can be related to network issues."}
+ML Label:  api_request
+ML Confidence:  0.5892364016900133
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "The log message describes receiving a block with source and destination IP addresses, suggesting a network-level data transfer, which can be considered a type of API or service-level request/response activity."}
+```
+ML Label:  api_request
+ML Confidence:  0.5875018162184877
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes receiving a block with source and destination addresses, which is consistent with network communication related to data transfer, often seen in API or service interactions."}
+ML Label:  api_request
+ML Confidence:  0.5914010877335926
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to describe a data transfer or communication event, potentially related to a peer-to-peer network or distributed system, which can be considered a form of API interaction or data request within that system."}
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  api_request
+ML Confidence:  0.5642139981449233
+{"label": "api_request", "confidence": 0.70, "explanation": "This message appears to be a normal operational log detailing data transfer (receiving a block) which is characteristic of API or service communication. It doesn't clearly fit other categories like errors or authentication."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228242
+{"label": "network_error", "confidence": 0.85, "explanation": "PacketResponder often indicates network-related issues in distributed systems."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999656
+{"label": "api_request", "confidence": 0.90, "explanation": "This log indicates the reception of a block of data, which is a typical event in data processing or network communication, fitting the general pattern of an API request or data transfer event. While not a standard HTTP method, it represents a data ingress event that falls under the broader umbrella of API interactions or service operations."}
+ML Label:  network_error
+ML Confidence:  0.5441869302603264
+ML Label:  network_traffic
+ML Confidence:  0.5213787637624923
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348145
+ML Label:  network_traffic
+ML Confidence:  0.5519286838421217
+ML Label:  api_request
+ML Confidence:  0.5586184867479842
+ML Label:  api_request
+ML Confidence:  0.4791998518711711
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333993
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  network_activity
+ML Confidence:  0.6304543517641974
+ML Label:  api_request
+ML Confidence:  0.6576911148509024
+ML Label:  network_error
+ML Confidence:  0.4427235437777678
+ML Label:  api_request
+ML Confidence:  0.6893533004068654
+ML Label:  api_request
+ML Confidence:  0.5285654649719639
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833193
+{"label": "api_request", "confidence": 0.70, "explanation": "This log indicates a successful reception of data, likely part of a larger data transfer or processing operation, which is characteristic of a normal API request or data exchange."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  network_traffic
+ML Confidence:  0.5625953875183354
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message appears to describe the reception of a data block, which is a common event in API interactions or data transfer protocols. It doesn't strongly indicate an error, success, or specific system resource issue."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.85, "explanation": "Terminating packet responder suggests a network issue or disruption."}
+ML Label:  network_error
+ML Confidence:  0.44008684383904234
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message appears to describe the reception of a data block, which is a common pattern in network protocols or distributed systems, similar to a data transfer or API interaction."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+{"label": "network_error", "confidence": 0.90, "explanation": "Log indicates a 'PacketResponder' terminating, which often relates to network packet processing and potential network-level issues."}
+ML Label:  api_request
+ML Confidence:  0.4512605529732367
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message describes the reception of a data block, which is a common event in network communication and data transfer protocols, fitting the general pattern of an API request or data handling operation."}
+ML Label:  api_request
+ML Confidence:  0.6263068028817834
+{"label": "api_request", "confidence": 0.7, "explanation": "Indicates receipt of a data block, likely part of a larger data transfer or API interaction. The details suggest network communication between specific IPs and ports."}
+ML Label:  api_request
+ML Confidence:  0.38720075369547646
+{"label": "api_request", "confidence": 0.85, "explanation": "Log indicates receiving a block, which is a type of data transfer, likely part of a larger system operation or API interaction. The format suggests a communication event."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  api_request
+ML Confidence:  0.5149104789146819
+{"label": "api_request", "confidence": 0.80, "explanation": "This log message describes the reception of a data block with source and destination IP addresses and ports. This pattern is indicative of a data transfer operation, which can be considered a type of API request or inter-service communication."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965614
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network operations often indicates a network-related issue or closure of a network component."}
+ML Label:  api_request
+ML Confidence:  0.6850414787507514
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes the reception of a 'block' which suggests a data transfer operation, likely part of a larger API interaction or network protocol. It lacks explicit error indicators but denotes a data-related event within a system."}
+ML Label:  api_request
+ML Confidence:  0.5441553595568873
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message appears to describe a data transfer or network communication event, which could be related to an API request or a service communicating over the network. Without more context, it's difficult to be more precise, but it's not a clear error or authentication event."}
+ML Label:  api_request
+ML Confidence:  0.4728385709264495
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving a block which is a common data transfer operation in many network protocols and APIs."}
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates a data transfer operation, likely part of a larger service interaction. Could be a file transfer or data processing API call."}
+```
+ML Label:  api_request
+ML Confidence:  0.5700605821583614
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a normal network communication message, possibly related to data transfer or peer-to-peer interaction within a system. It doesn't fit the other specific error categories."}
+ML Label:  network_activity
+ML Confidence:  0.4728238257726687
+{"label": "api_request", "confidence": 0.85, "explanation": "The log message describes receiving a block, which is a typical action within a distributed system or API, likely related to data transfer or synchronization."}
+ML Label:  filesystem_error
+ML Confidence:  1.0
+ML Label:  api_request
+ML Confidence:  0.5554309447987875
+ML Label:  api_request
+ML Confidence:  0.5708300249581596
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  network_error
+ML Confidence:  0.4548728428302944
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  api_request
+ML Confidence:  0.5112090188904168
+ML Label:  network_traffic
+ML Confidence:  0.5520744196805241
+ML Label:  api_request
+ML Confidence:  0.5707246381350454
+ML Label:  api_request
+ML Confidence:  0.5124164596847829
+ML Label:  network_traffic
+ML Confidence:  0.540101976957167
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  api_request
+ML Confidence:  0.4756450719440948
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.75, "explanation": "Receiving a block of data is likely part of a larger data transfer or API operation, but it's not explicitly an error or a success. It fits best as a general API request activity."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network operations suggests a network-related issue, potentially a dropped connection or a problem with packet handling."}
+```
+ML Label:  api_request
+ML Confidence:  0.6046175598101986
+{"label": "api_request", "confidence": 0.75, "explanation": "The log indicates receiving data related to a block, which is typical of a data transfer or API interaction within a system. It doesn't clearly fall into error, authentication, or resource categories."}
+ML Label:  api_error
+ML Confidence:  0.2484032987958013
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log message indicates a filesystem operation related to block storage, potentially related to disk usage or file system state."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+{"label": "api_request", "confidence": 0.75, "explanation": "Receiving a block of data from an IP address is consistent with a data transfer or API interaction, though less specific than a typical HTTP request log."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions 'addStoredBlock' and an IP address with a port, which is typical for distributed file system operations. While not a direct file system error like 'permission denied', it relates to block storage operations that can fail due to underlying filesystem issues, disk full, or corruption, making it the closest fit among the given categories."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.7, "explanation": "This log indicates the reception of a block, which could be part of a data transfer or API interaction, but lacks specific error indicators for other categories. It's a generic message about data being received."}
+ML Label:  api_request
+ML Confidence:  0.6283222243662213
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message describes receiving a data block with source and destination network addresses, which is typical for network communication during data transfer, consistent with an API request or data processing operation."}
+```
+ML Label:  api_request
+ML Confidence:  0.5007220853448376
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "Log appears to be a normal network activity message, possibly related to data transfer. It does not fit other error categories, and 'api_request' is the most general category for network-level operations that aren't explicitly errors."}
+```
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log message mentions 'blockMap updated' and includes an IP address and port, which often relate to file system or storage operations. Without more context, it's hard to be certain, but filesystem_error is a plausible category for storage-related messages."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message indicates the reception of a 'block' which is a data transfer operation, common in distributed systems or data processing, fitting the broad scope of an API request."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message refers to block storage operations, which are related to the file system."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network operations often relates to network communication issues like packet handling failures or disconnections."}
+ML Label:  api_request
+ML Confidence:  0.6688012377085879
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message describes the reception of a 'block' which is a common data structure in distributed systems and APIs. The source and destination IP addresses suggest a network communication, likely part of an API interaction or data transfer protocol."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions block operations and specific IP addresses, which are common in file system or distributed storage logs, indicating potential issues or state changes related to block storage. While not a direct error, it points to a low-level file/storage system operation."}
+ML Label:  api_request
+ML Confidence:  0.5914202317493963
+{"label": "api_request", "confidence": 0.75, "explanation": "This message appears to be a normal network communication, likely an API request or data transfer, indicated by the 'Receiving block' and IP/port information."}
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  api_request
+ML Confidence:  0.35404624631366743
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  log_event
+ML Confidence:  0.10480829299315939
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  api_error
+ML Confidence:  0.24840329879580142
+ML Label:  api_request
+ML Confidence:  0.5731383379962874
+ML Label:  log_event
+ML Confidence:  0.10480829299315948
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625992
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283317
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  api_request
+ML Confidence:  0.4411178459005142
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log mentions 'NameSystem.addStoredBlock' and block information, which can relate to file system operations or data storage, but the specific error is not clear. It could also be a normal operation within a distributed file system."}
+ML Label:  api_request
+ML Confidence:  0.5642472531482566
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving a block, which is a common operation in distributed systems or blockchain, suggesting a data transfer or API interaction."}
+ML Label:  api_request
+ML Confidence:  0.4409089009524503
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes the reception of a 'block' which implies a data transfer or communication that is likely part of a larger system's operational request, rather than an error or authentication event. It resembles a successful data operation."}
+ML Label:  system_operation
+ML Confidence:  0.15584867173565617
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions 'addStoredBlock' and updates to a 'blockMap', which suggests operations related to file or block storage systems. While not explicitly a filesystem error, it aligns with block-level operations that can be subject to filesystem constraints or issues."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+{"label": "network_error", "confidence": 0.85, "explanation": "The log message mentions 'PacketResponder' and 'block', which can relate to network packet handling and data blocks, often associated with network transmission issues or dropped packets leading to termination."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "PacketResponder suggests network-related activity, and termination implies an issue."}
+```
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions 'NameSystem.addStoredBlock' and updates to block maps, which are related to file system operations. However, it doesn't explicitly state an error. The confidence is lower due to the lack of a clear error indicator. It might be a successful operation, but 'filesystem_error' is the closest fit based on keywords related to block storage."}
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627417
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274229
+ML Label:  log_event
+ML Confidence:  0.10480829299315948
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions updating a block on a specific IP address and port, which is related to file system operations or block storage management. It doesn't directly indicate a failure, but the prefix 'BLOCK*' and the nature of block management leans towards filesystem operations rather than network, database, or API calls. Without more context, it's hard to be more specific."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024631
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and the context of termination suggest a network-related issue with packet handling."}
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "Log message contains 'BLOCK*' and 'addStoredBlock', which are often related to file system operations and block management in distributed file systems."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message indicates a successful reception of data (a 'block') from a specific network address, which is typical of a data transfer or API interaction, but lacks specific error indicators for other categories."}
+ML Label:  api_request
+ML Confidence:  0.5030579609659881
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to describe the reception of a data block, which is a common event in network protocols or API interactions. Without more context, it's difficult to be more specific, but it doesn't fit the criteria for other error or success categories. It's treated as a general data transfer event."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211807
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348149
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions block updates and storage, which are related to filesystem operations. However, it does not explicitly state an error. The confidence is moderate due to the lack of an explicit error keyword."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+```json
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions 'BLOCK*' and block storage operations, which are typically related to filesystem operations. While not a direct error, it indicates a low-level storage operation. Given the context of block updates, 'filesystem_error' is the most fitting category among the options, implying potential issues with block management or storage integrity. The confidence is moderate because it's not a definitive error message but rather an operational log that could precede or indicate a filesystem issue."}
+```
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+```json
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message describes receiving data, which is typical of a normal API request or data transfer, rather than an error or a specific security event."}
+```
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to be a normal data reception event within an API or service, not indicating an error, authentication event, or configuration issue."}
+ML Label:  system_operation
+ML Confidence:  0.15584867173565622
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  api_request
+ML Confidence:  0.7692129478233559
+ML Label:  api_request
+ML Confidence:  0.6474675166037716
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+ML Label:  name_system_operation
+ML Confidence:  0.1055300454334814
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605863
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  log_event
+ML Confidence:  0.10480829299315939
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605858
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627415
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627417
+ML Label:  name_system_operation
+ML Confidence:  0.1055300454334815
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message appears to be an internal system event related to adding a block to a distributed file system (likely HDFS). While not a typical user-facing API request, it represents a system operation that can be conceptually mapped to an API interaction within the system's architecture. The 'BLOCK*' prefix and 'NameSystem.addStoredBlock' suggest a method call or internal API operation."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to be an internal API or service method call, indicated by the format and the action of 'adding a stored block'. It doesn't fit other error categories."}
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625998
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to be a successful operation within a distributed system, likely related to a NameNode in a Hadoop cluster. The 'addStoredBlock' operation suggests a successful registration of a block with a storage node, which is a core part of data management and can be considered analogous to an API call for data block management. It doesn't indicate an error, authentication issue, configuration problem, resource exhaustion, security threat, or network failure."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "This log message refers to updating a block map which is related to file system operations. While not explicitly stating an error, the 'BLOCK*' prefix and the nature of block management in distributed file systems lean towards filesystem-related events. It could be a normal operation within a distributed filesystem, but without more context, it's hard to be certain. The term 'addStoredBlock' suggests an action on a block, which is a fundamental unit in file systems."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+{"label": "network_error", "confidence": 0.85, "explanation": "Indicates a network component 'PacketResponder' is terminating, often due to network issues like packet loss or connection problems."}
+ML Label:  filesystem_error
+ML Confidence:  0.763934327736641
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625998
+ML Label:  api_error
+ML Confidence:  0.2484032987958013
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message seems to indicate an operation related to block storage, which could potentially be related to filesystem operations or data corruption, but it's not definitive."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log message indicates a block being added to a NameSystem, which typically involves file system operations. While not explicitly a 'file not found' or 'permission denied', it relates to the storage and management of data blocks which falls under filesystem concerns."}
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627414
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "Log mentions block operations which are typically filesystem related. The format suggests a file or block being added/managed, but without more context on the system, it's difficult to be certain. It could also be an internal system status update, but filesystem operations are a common interpretation."}
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "While the message describes adding a block, the context of NameSystem and stored blocks often relates to file system operations in distributed systems. The 'BLOCK*' prefix can sometimes indicate issues related to block management which could be tied to filesystem integrity or availability."}
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log message mentions 'NameSystem.addStoredBlock' which often relates to distributed file systems and block management, implying file system operations. While not a direct error, it's the most specific category related to block storage operations."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates a received data block, likely part of a data transfer or storage operation, which can be considered a form of API interaction or data-related request."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log message mentions a 'block' and 'terminating', which can be associated with filesystem operations that might fail or encounter issues."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log message mentions 'NameSystem.addStoredBlock', which implies operations related to block storage and file systems, and 'is added to blk', suggesting file or block addition. While not a direct error, it's the most fitting category related to block/file system operations."}
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates a successful reception of data, resembling a successful API data transfer or processing step."}
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message contains 'addStoredBlock' which relates to file system operations, and 'blk_-8856211891486528880' could refer to a block on a filesystem. While not a definitive error, it leans towards filesystem management."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+{"label": "api_request", "confidence": 0.7, "explanation": "Receiving data blocks is part of a larger system interaction, likely an API request or internal service communication that doesn't fit other specific error categories."}
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  api_request
+ML Confidence:  0.6056547556319495
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  system_operation
+ML Confidence:  0.15584867173565622
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  log_event
+ML Confidence:  0.10480829299315948
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605859
+ML Label:  log_event
+ML Confidence:  0.10480829299315937
+ML Label:  network_error
+ML Confidence:  0.46092326950490237
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627415
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627417
+ML Label:  service_request
+ML Confidence:  0.10379609130335506
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be reporting a status update or action taken by a system component, likely related to data storage or block management. It doesn't clearly indicate an error, authentication event, or configuration issue, making a general API request or internal system event the most fitting, albeit less specific, classification."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes an update operation within a NameSystem, which can be interpreted as a system-level API request or an internal service call related to block management."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates a successful block addition, which is part of a data storage operation. While not a typical GET/POST, it's an internal API-like operation within a system (likely HDFS). The 'addStoredBlock' suggests an API call to update the block map."}
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274229
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+{"label": "api_request", "confidence": 0.85, "explanation": "This log indicates a successful operation within a distributed file system (likely HDFS), specifically adding a stored block. It resembles a status update or a successful operation confirmation, which aligns with the broad scope of API requests or system operations."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message indicates the reception of data (a block) from a specific network address, which is characteristic of a data transfer or API interaction, rather than an error or authentication event."}
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274229
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates receipt of a data block, which is a type of data transfer often associated with API-like operations, though not a standard HTTP method. It's more specific than a general network event but lacks the explicit API error/success markers."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message mentions 'addStoredBlock' which relates to file system operations, specifically storing blocks of data. While not a direct error, it implies interaction with a block storage system which falls under filesystem operations.  It could also be interpreted as a normal operation, but without more context, leaning towards a potential filesystem interaction event."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message appears to describe a successful operation within a distributed file system, specifically adding a block. The format 'NameSystem.addStoredBlock' suggests an API call or an internal service method execution rather than an error or security event. It's a normal operational event."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965614
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and the action 'terminating' suggests a network-related issue with packet handling."}
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348149
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a normal operational message related to a distributed file system or block storage system, indicating a block has been added. It doesn't fit the specific error or authentication categories."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999656
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to be describing the reception of data, potentially a block from a distributed system, which is a common characteristic of API-driven interactions or data processing tasks. It doesn't fit other specific categories like errors, authentication, or resource issues."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605861
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "This log message appears to be related to a distributed file system (NameSystem) and block storage. While not explicitly a 'file not found' or 'permission denied', it indicates a file system operation ('addStoredBlock') potentially encountering an issue that requires investigation, fitting best under filesystem_error due to its nature of manipulating stored data. The confidence is moderate due to the ambiguity of the exact error condition described."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log message mentions adding a block to a namesystem, which relates to file or block storage operations, and could imply a file system interaction or error if the addition fails or is abnormal. However, the wording suggests a successful operation, making the classification less direct. Given the ambiguity and potential for underlying filesystem issues, 'filesystem_error' is chosen as the most plausible, albeit with moderate confidence."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to be a normal system operation related to receiving data, similar to a data transfer or API interaction, but lacks explicit keywords for other categories."}
+```
+ML Label:  api_request
+ML Confidence:  0.4974115969154315
+{"label": "api_request", "confidence": 0.85, "explanation": "Log indicates receipt of data block, consistent with network data transfer, possibly part of a larger API interaction or data processing operation."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+{"label": "network_error", "confidence": 0.85, "explanation": "PacketResponder indicates network communication issues, and 'terminating' suggests a failure."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  network_request
+ML Confidence:  0.3657326208784145
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274229
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625997
+ML Label:  api_request
+ML Confidence:  0.4674379912757589
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  block_received
+ML Confidence:  0.24994051874741569
+ML Label:  api_request
+ML Confidence:  0.5764539565751053
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627411
+ML Label:  api_error
+ML Confidence:  0.2484032987958013
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627414
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024635
+ML Label:  api_request
+ML Confidence:  0.4966963079826046
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.7, "explanation": "Log indicates reception of data from a network address, potentially part of a data transfer or API interaction, but lacks specific error or success indicators."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+```json
+{"label": "api_request", "confidence": 0.85, "explanation": "Receiving a block of data from an IP address is indicative of a data transfer or API interaction, likely a normal operation."}
+```
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605861
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log indicates a block being added to a filesystem, and the format suggests a potential issue related to block management or filesystem operation."}
+ML Label:  api_request
+ML Confidence:  0.610577111301751
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to be a network communication message, possibly related to data transfer or block processing, which can be considered a type of API interaction or data request within a distributed system."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+{"label": "filesystem_error", "confidence": 0.70, "explanation": "The log message mentions 'addStoredBlock' which relates to file system operations for storing blocks of data, and the content suggests potential issues with block management or integrity, which aligns with filesystem errors. It's not definitively a filesystem error like 'permission denied' or 'disk quota', hence the moderate confidence."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+{"label": "network_error", "confidence": 0.85, "explanation": "Logs indicate a packet responder termination which is often related to network communication issues."}
+ML Label:  block_received
+ML Confidence:  0.24994051874741569
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to be a message indicating the reception of data, similar to a data transfer or API interaction, but lacks specific keywords for other categories."}
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999648
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates receipt of data which could be part of a larger API interaction or data transfer."}
+ML Label:  api_request
+ML Confidence:  0.6900590649520949
+{"label": "api_request", "confidence": 0.7, "explanation": "The log indicates receiving a block of data with source and destination IP addresses and ports, which is characteristic of network data transfer, potentially part of an API interaction or service communication. It doesn't directly indicate an error or authentication event."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6481822420364753
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log message mentions 'block' and 'terminating', which can indicate filesystem issues related to data blocks."}
+ML Label:  network_message
+ML Confidence:  0.32438236890417116
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receipt of data, which is a common part of API interactions, but lacks specific error indicators or explicit request verbs. Leans towards a normal operational message."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to describe a network event of receiving data, possibly an API-related transfer, but lacks specific keywords for other categories. It's a general data reception message."}
+ML Label:  api_request
+ML Confidence:  0.6645009174069502
+{"label": "api_request", "confidence": 0.7, "explanation": "Indicates the reception of a data block, which is a common event in network services or distributed systems, fitting the general pattern of a data transfer request or response."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network operations suggests a potential network-related issue leading to the termination of a packet handler."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates receiving data from a network source, characteristic of an API interaction or data transfer."}
+ML Label:  network_error
+ML Confidence:  0.8187860117310014
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  block_received
+ML Confidence:  0.2499405187474158
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates reception of data ('block') from a specific IP address, suggestive of a data transfer or processing operation often seen in API interactions or service communication."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  network_error
+ML Confidence:  0.4233916896409316
+ML Label:  api_request
+ML Confidence:  0.4580841082260455
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  block_received
+ML Confidence:  0.24994051874741569
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  network_request
+ML Confidence:  0.36966067269630676
+ML Label:  api_request
+ML Confidence:  0.530634397345164
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  block_received
+ML Confidence:  0.24453544443621486
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receipt of a data block, which can be interpreted as a normal data transfer event, similar to a request/response cycle in an API context. No errors or specific authentication/security events are mentioned."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network operations suggests a network-related issue, potentially a dropped or reset connection leading to a component's termination."}
+```
+ML Label:  network_error
+ML Confidence:  0.8955183946211801
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024635
+{"label": "network_error", "confidence": 0.85, "explanation": "The log message contains 'PacketResponder' and 'terminating', which strongly suggests a network-related issue where a packet responder has stopped functioning."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates receipt of a data block from a specific IP address, suggesting a data transfer operation which is a type of API interaction."}
+ML Label:  api_request
+ML Confidence:  0.6922927014792924
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to describe the reception of a data block, which is characteristic of a data transfer or communication event, often associated with API interactions or service-to-service communication. It doesn't fit clearly into other categories like errors, authentication, or configuration. While it could be part of a larger system, 'api_request' is the most general and fitting category among the provided options for this type of data transfer log."}
+ML Label:  block_received
+ML Confidence:  0.24994051874741569
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+```json
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates receiving a data block, likely part of a larger data transfer or API operation."}
+```
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+{"label": "network_error", "confidence": 0.85, "explanation": "PacketResponder terminating suggests a network-level issue with packet handling."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.70, "explanation": "This log appears to be a notification of data being received, potentially as part of a larger service operation. It doesn't fit the specific error categories and is most broadly an API/service-level interaction."}
+ML Label:  api_request
+ML Confidence:  0.4324029089692724
+```json
+{"label": "api_request", "confidence": 0.80, "explanation": "This log message appears to be reporting the reception of a data block within a network communication, which is characteristic of an API request or data transfer operation. It doesn't clearly fit other categories like authentication, errors, or resource issues."}
+```
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.85, "explanation": "The log message indicates a 'PacketResponder' terminating, which is often related to network communication issues or failures in handling network packets."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.85, "explanation": "Indicates a problem with packet transmission, often related to network issues."}
+ML Label:  api_request
+ML Confidence:  0.6586759494801504
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a normal network operation related to data transfer, possibly an API or service communication, but lacks specific error or authentication keywords."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  block_received
+ML Confidence:  0.2499405187474158
+{"label": "api_request", "confidence": 0.75, "explanation": "Log message describes receiving data which is a part of a larger data transfer, similar to an API request or response payload handling. Without more context, it is difficult to be more specific."}
+ML Label:  api_request
+ML Confidence:  0.6196575990764855
+{"label": "api_request", "confidence": 0.75, "explanation": "Log message indicates a data transfer or communication event, similar to an API request for data processing or exchange, rather than a specific error or authentication event."}
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+{"label": "api_request", "confidence": 0.75, "explanation": "This log describes receiving data, similar to how an API might receive a payload or response. Without more context, it's the most fitting category."}
+ML Label:  api_request
+ML Confidence:  0.4965557665783706
+{"label": "api_request", "confidence": 0.70, "explanation": "Log indicates receiving data, consistent with an API data transfer or internal service communication. Lacks specific error indicators for other categories."}
+ML Label:  block_received
+ML Confidence:  0.2499405187474158
+ML Label:  api_request
+ML Confidence:  0.4345548658733154
+ML Label:  api_request
+ML Confidence:  0.5341947273289684
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  api_request
+ML Confidence:  0.4803184586784715
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  api_request
+ML Confidence:  0.7669646009722055
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  network_request
+ML Confidence:  0.24954819282410412
+ML Label:  api_request
+ML Confidence:  0.6157985094285264
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+ML Label:  api_request
+ML Confidence:  0.3823356017191525
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  network_request
+ML Confidence:  0.36966067269630687
+ML Label:  block_received
+ML Confidence:  0.24994051874741563
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024631
+ML Label:  api_request
+ML Confidence:  0.7233069975895435
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+{"label": "network_error", "confidence": 0.85, "explanation": "Log indicates a 'packet responder' is terminating, suggesting a network communication issue or packet handling failure."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates a data transfer event, likely part of a larger API operation or data processing pipeline."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates receipt of data ('block') from a network address, consistent with a data transfer operation which can be part of an API or internal service communication."}
+ML Label:  api_request
+ML Confidence:  0.5871725855038861
+{"label": "api_request", "confidence": 0.70, "explanation": "Log indicates receipt of a data block, which is a common event in many APIs or network services, but not specific enough for other categories."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+{"label": "network_error", "confidence": 0.85, "explanation": "PacketResponder often relates to network packet handling, and termination could indicate a network issue or dropped connection."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+{"label": "network_error", "confidence": 0.85, "explanation": "Indicates a network-related termination, likely due to packet issues or connection problems."}
+ML Label:  api_request
+ML Confidence:  0.8212671626309266
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  api_request
+ML Confidence:  0.6392159512794074
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes the reception of a 'block' which is likely an API response or data transfer related to a service, indicated by source and destination IP addresses and ports."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+{"label": "network_error", "confidence": 0.85, "explanation": "The log message indicates a 'PacketResponder' terminating, which strongly suggests a network-related issue where packets are no longer being handled or transmitted correctly. This points towards a network error."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  resource_exhaustion
+ML Confidence:  0.5875596497690936
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in a network context suggests a network-related issue, potentially a dropped connection or an issue with packet handling."}
+ML Label:  api_request
+ML Confidence:  0.4732463671718557
+{"label": "api_request", "confidence": 0.7, "explanation": "Log indicates receiving data blocks, which can be part of a larger data transfer or API operation."}
+ML Label:  network_request
+ML Confidence:  0.24954819282410404
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "The log indicates receiving a block of data from a specific IP address, which is a common pattern in network communication or API interactions, but lacks specific error keywords to place it in a more specific category."}
+```
+ML Label:  block_received
+ML Confidence:  0.24453544443621492
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data, possibly part of an API interaction or data transfer process."}
+ML Label:  api_request
+ML Confidence:  0.5113750522541222
+{"label": "api_request", "confidence": 0.7, "explanation": "Log message describes receiving a block, which is typical of data transfer or API-level communication, not a system error or authentication event."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5875596497690934
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network packets suggests a network-related issue, possibly a failure or termination of a network component."}
+```
+ML Label:  filesystem_error
+ML Confidence:  0.9959919533851276
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+{"label": "network_error", "confidence": 0.85, "explanation": "The log indicates a 'PacketResponder' terminating, which suggests a network-related issue with packet processing or handling."}
+ML Label:  block_received
+ML Confidence:  0.2499405187474158
+ML Label:  api_request
+ML Confidence:  0.26927497980624504
+```json
+{"label": "api_request", "confidence": 0.95, "explanation": "POST request to an API endpoint"}
+```
+ML Label:  network_error
+ML Confidence:  0.2214280042798126
+ML Label:  network_error
+ML Confidence:  0.21741341190160526
+ML Label:  network_error
+ML Confidence:  0.25728798668605807
+ML Label:  api_request
+ML Confidence:  0.2612119720929325
+ML Label:  api_request
+ML Confidence:  0.19269738496322847
+ML Label:  network_error
+ML Confidence:  0.1781493796535209
+ML Label:  network_error
+ML Confidence:  0.27168953045691197
+ML Label:  network_error
+ML Confidence:  0.23963439974097478
+ML Label:  network_error
+ML Confidence:  0.2673321392436143
+ML Label:  api_request
+ML Confidence:  0.28965203974536785
+ML Label:  network_error
+ML Confidence:  0.3068569283281058
+ML Label:  network_error
+ML Confidence:  0.2531070144191606
+ML Label:  network_error
+ML Confidence:  0.29045745625272384
+ML Label:  api_request
+ML Confidence:  0.27213278304154864
+ML Label:  network_error
+ML Confidence:  0.23831273864676772
+```json
+{"label": "api_request", "confidence": 0.96, "explanation": "Log indicates a DELETE API request with an item ID and a processing ID."}
+```
+ML Label:  api_request
+ML Confidence:  0.19011556200433968
+{"label": "api_request", "confidence": 0.95, "explanation": "Indicates a standard API request (OPTIONS for CORS check)."}
+ML Label:  api_request
+ML Confidence:  0.22499992391770338
+{"label": "api_request", "confidence": 0.95, "explanation": "Indicates a PATCH request to an API endpoint"}
+ML Label:  network_error
+ML Confidence:  0.2916308055691429
+{"label": "api_request", "confidence": 0.96, "explanation": "Indicates a standard GET request to an API endpoint with an associated ID."}
+ML Label:  network_error
+ML Confidence:  0.24486692833610527
+```json
+{"label": "api_request", "confidence": 0.95, "explanation": "Indicates a normal POST API request"}
+```
+ML Label:  api_request
+ML Confidence:  0.2539687207758825
+{"label": "api_request", "confidence": 0.96, "explanation": "Indicates a DELETE API request with an item ID and a processed ID."}
+ML Label:  network_error
+ML Confidence:  0.22992942176143782
+```json
+{"label": "api_request", "confidence": 0.95, "explanation": "Indicates a HEAD request to a /health endpoint, a common API health check."}
+```
+ML Label:  network_error
+ML Confidence:  0.18495544272192785
+```json
+{"label": "api_request", "confidence": 0.96, "explanation": "Log indicates a standard API OPTIONS request for CORS check."}
+```
+ML Label:  api_request
+ML Confidence:  0.26569734455645283
+```json
+{"label": "api_request", "confidence": 0.96, "explanation": "Indicates a POST request to an API endpoint"}
+```
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' suggests network activity, and 'terminating' implies an issue or abnormal end to that activity."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  network_request
+ML Confidence:  0.3657326208784145
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message describes receiving data (a block) from a network address, which is indicative of a data transfer or processing step that could be part of a larger API interaction or service communication. It doesn't fit the other categories as well as it implies a normal operation within a system."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.85, "explanation": "Log indicates receipt of data ('block') from a network source, characteristic of a data transfer or API interaction rather than an error or authentication event."}
+ML Label:  api_request
+ML Confidence:  0.6872291005075002
+{"label": "api_request", "confidence": 0.85, "explanation": "Log indicates a data transfer related to a service or system, likely an API-driven operation, without explicit error or authentication indicators. The specific format suggests network communication within a system."}
+ML Label:  filesystem_error
+ML Confidence:  0.7639343277366408
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+{"label": "network_error", "confidence": 0.85, "explanation": "Indicates a network communication issue with 'PacketResponder' likely related to packet loss or termination."}
+ML Label:  network_error
+ML Confidence:  0.4466474798101643
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to be describing the reception of a data block, which could be part of a larger data transfer or API operation. It doesn't clearly fit into other error categories and is not an authentication or security event."}
+ML Label:  api_request
+ML Confidence:  0.3813135803181954
+{"label": "api_request", "confidence": 0.85, "explanation": "The log message indicates receiving a block, which is a common operation in distributed systems and can be considered a form of data transfer or API interaction."}
+ML Label:  block_received
+ML Confidence:  0.24453544443621492
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  api_request
+ML Confidence:  0.7280782774113597
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605864
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965614
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024635
+ML Label:  block_received
+ML Confidence:  0.24994051874741566
+ML Label:  filesystem_error
+ML Confidence:  1.0
+ML Label:  network_request
+ML Confidence:  0.24954819282410412
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605859
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  api_request
+ML Confidence:  0.5619238025218403
+ML Label:  block_received
+ML Confidence:  0.24453544443621492
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data, potentially as part of a larger data transfer or API interaction. Lacks specific error keywords to fit other categories."}
+ML Label:  api_request
+ML Confidence:  0.5826258533189419
+{"label": "api_request", "confidence": 0.80, "explanation": "This message appears to describe a data transfer or communication event between network endpoints, which is characteristic of an API request or a low-level network protocol message that is not explicitly an error."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+```json
+{"label": "api_request", "confidence": 0.90, "explanation": "Indicates receipt of data, likely part of a larger data transfer or API operation. The source IP address suggests an external interaction."}
+```
+ML Label:  system_operation
+ML Confidence:  0.1558486717356562
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log message contains 'BLOCK*' and refers to block updates, which is common in file system operations or distributed file systems like HDFS. While it could be related to a successful operation, the 'BLOCK*' prefix often indicates system-level file operations or potential issues if interpreted in certain contexts. Given the options, 'filesystem_error' is the most fitting if we consider block management as a core filesystem concept or if there's an underlying assumption of potential corruption or issues with block storage."}
+ML Label:  api_request
+ML Confidence:  0.5134256347247308
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message describes the reception of a data block from a specific source and destination, which is characteristic of a normal data transfer or API interaction within a system, but lacks specific error indicators or authentication keywords."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' suggests a network-related issue with packet handling leading to a process termination."}
+ML Label:  api_request
+ML Confidence:  0.6268924020965012
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes receiving a 'block', which is a data transfer operation often associated with API interactions or data processing. It includes source and destination IP addresses and ports, characteristic of network communication during an API call or data ingest."}
+ML Label:  api_request
+ML Confidence:  0.6721242759978948
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes receiving a block with source and destination addresses, which is characteristic of a data transfer or communication related to an API or service, but does not indicate an error or authentication event."}
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message describes an internal system operation related to block storage, which can be considered an internal API-like request or event within the system's distributed storage functionality. It's not an explicit error or authentication event."}
+ML Label:  network_traffic
+ML Confidence:  0.5102443704805057
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data, potentially part of a data transfer or API interaction. Lacks explicit error or success indicators for other categories."}
+ML Label:  network_request
+ML Confidence:  0.36573262087841457
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates receipt of a data block which is a typical part of a larger data transfer or API interaction, not a direct error or specific system event."}
+ML Label:  api_request
+ML Confidence:  0.5179832601515765
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data blocks, consistent with a data transfer or API interaction, but lacks explicit error or authentication context."}
+ML Label:  network_error
+ML Confidence:  0.42753212157400916
+{"label": "api_request", "confidence": 0.7, "explanation": "Log message indicates receiving a block, which could be part of a data transfer or API interaction, but lacks specific error indicators. Without more context, it's difficult to classify more precisely."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a successful reception of data, potentially an API-related event, but lacks specific indicators for other categories."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+```json
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log message mentions a block being added to a block map, which can be related to filesystem operations or distributed storage systems where blocks are managed, potentially indicating a state change or error within such a system. Without more context, it's difficult to be more specific, but it doesn't fit other categories well."}
+```
+ML Label:  api_request
+ML Confidence:  0.5147761106475093
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data block, which is a common part of data transfer protocols, often associated with API interactions or service communication. It doesn't strongly indicate an error, security issue, or resource problem."}
+ML Label:  api_request
+ML Confidence:  0.3389042000352409
+ML Label:  api_request
+ML Confidence:  0.433259420254764
+ML Label:  api_request
+ML Confidence:  0.6923790786695103
+ML Label:  network_activity
+ML Confidence:  0.46819246777447565
+ML Label:  filesystem_error
+ML Confidence:  0.49548784933470263
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "network_error", "confidence": 0.85, "explanation": "The log mentions 'PacketResponder' and 'terminating', suggesting a network-related issue or disconnection."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_traffic
+ML Confidence:  0.576643303008301
+ML Label:  api_request
+ML Confidence:  0.5798724087335141
+ML Label:  api_request
+ML Confidence:  0.594620067976149
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833196
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  api_request
+ML Confidence:  0.4636364419264661
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833177
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "Log describes receiving a block, which could be part of a data transfer or API interaction. It's not an error, authentication, or resource issue."}
+```
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of a block suggest a network-related issue or a failure in network packet handling."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333994
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "Log indicates termination of a network-related component ('PacketResponder') for a block, suggesting a network issue that caused the termination."}
+```
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message indicates the reception of a data block from a specific IP address, which is characteristic of a data transfer operation, fitting within the broad scope of API interactions or service communications."}
+ML Label:  api_request
+ML Confidence:  0.9599524868801788
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  network_error
+ML Confidence:  0.368841789637872
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message indicates receiving a block, which is a common operation in network services or distributed systems, akin to a data transfer or an API-related event."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  network_request
+ML Confidence:  0.46153153236233035
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message indicates receiving a data block, which is a common event in data processing or API interactions. Without further context implying an error or specific service interaction, it fits the general pattern of an API request or data transfer event."}
+ML Label:  api_request
+ML Confidence:  0.8464002964275126
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log message indicates block storage operations which are related to filesystem, but lacks clear error indicators. It's a borderline case, leaning towards filesystem but without explicit error, hence moderate confidence."}
+ML Label:  network_error
+ML Confidence:  0.9059595553299072
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.7, "explanation": "Log indicates receipt of data, potentially part of an API interaction, but lacks explicit error or authentication markers."}
+ML Label:  api_request
+ML Confidence:  0.6744077102105486
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data blocks, which is a typical part of a network protocol or API interaction. The format suggests a data transfer operation."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to be an internal system update or status message related to block storage, which functions similarly to an API request or internal service communication. It doesn't fit the other categories as clearly."}
+ML Label:  api_request
+ML Confidence:  0.762257210305799
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "The log message mentions block operations and storage, which are related to file system interactions. While not a direct error, it relates to the management of stored data which is a filesystem concern. However, it could also be seen as a normal operation for a distributed file system. Given the 'BLOCK' prefix and addition of a block to a namesystem, it leans towards filesystem operations rather than a clear error."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to be a record of a data transfer operation, which is a form of API interaction. It's not a direct error or authentication event."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5875596497690934
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' suggests a network-related component is stopping, potentially due to network issues or errors."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.75, "explanation": "This log indicates the reception of data, which is typical of an API request or data transfer operation. While not a standard HTTP method, it represents a data exchange between services."}
+ML Label:  api_request
+ML Confidence:  0.8630316289012647
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  network_traffic
+ML Confidence:  0.5241823814405311
+{"label": "api_request", "confidence": 0.7, "explanation": "Log indicates a data transfer from a specific IP, potentially an API interaction or data retrieval, but lacks explicit error or authentication keywords. Classified as a general API request due to lack of more specific indicators."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and the termination of a block process suggests a network-related issue where packets are involved and the process is being stopped, possibly due to a network problem."}
+```
+ML Label:  log_event
+ML Confidence:  0.10480829299315939
+ML Label:  api_request
+ML Confidence:  0.48314157930164603
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates receiving data blocks, which is a common operation in distributed systems or P2P networks, often part of API interactions or data transfer protocols."}
+ML Label:  api_request
+ML Confidence:  0.4345315314218881
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  api_error
+ML Confidence:  0.2484032987958013
+ML Label:  network_message
+ML Confidence:  0.32438236890417116
+ML Label:  api_request
+ML Confidence:  0.7780984645841323
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  api_request
+ML Confidence:  0.44709953525567186
+ML Label:  network_error
+ML Confidence:  0.8955183946211801
+ML Label:  network_error
+ML Confidence:  0.5872294808209423
+ML Label:  network_traffic
+ML Confidence:  0.46511345696258566
+ML Label:  system_operation
+ML Confidence:  0.1558486717356562
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  api_request
+ML Confidence:  0.4601067359233286
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message indicates the reception of a data block, which is a common event in data transfer protocols or distributed systems, often associated with API-level operations for data ingestion or retrieval."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log message indicates a block being added to a filesystem, which is a filesystem operation. While it doesn't explicitly state an error, the structure suggests a lower-level file system interaction that could potentially be related to storage issues or errors in block management, hence leaning towards filesystem_error with moderate confidence."}
+ML Label:  api_request
+ML Confidence:  0.6211876059033667
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates reception of a data block, which is consistent with data transfer operations typical of API interactions or service-to-service communication. It's not explicitly an error or authentication event."}
+ML Label:  network_traffic
+ML Confidence:  0.6024414811839626
+{"label": "api_request", "confidence": 0.75, "explanation": "This message describes receiving a data block, which is characteristic of a data transfer or API interaction, rather than a system error."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+{"label": "network_error", "confidence": 0.85, "explanation": "Indicates a network component (PacketResponder) terminating, often due to network issues or instability."}
+ML Label:  api_request
+ML Confidence:  0.4532341025123989
+{"label": "api_request", "confidence": 0.70, "explanation": "The log message appears to be a normal network communication message related to receiving data blocks. While not a typical HTTP API request, it represents a data transfer event that could be part of a larger system's internal API or data processing mechanism. It doesn't fit other categories like errors, authentication, or configuration."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+{"label": "network_error", "confidence": 0.85, "explanation": "Log indicates a network component terminating unexpectedly, likely due to a network issue."}
+ML Label:  network_request
+ML Confidence:  0.2495481928241041
+{"label": "api_request", "confidence": 0.7, "explanation": "This log describes receiving a block of data, which is a common activity within data processing or API-related operations. It doesn't fit other specific error categories."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.7, "explanation": "This log indicates receipt of a data block from a network address, which is a common pattern for data transfer operations, fitting within the broader scope of API interactions or data processing requests."}
+ML Label:  api_request
+ML Confidence:  0.47482465335513857
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes receiving a block, which is consistent with data transfer or communication that might occur as part of an API request or a related internal service operation, but doesn't explicitly indicate an error or authentication event."}
+```
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605862
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+{"label": "network_error", "confidence": 0.90, "explanation": "Terminating packet responder indicates a network issue"}
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  api_request
+ML Confidence:  0.5060508830585213
+{"label": "api_request", "confidence": 0.75, "explanation": "The message describes receiving a 'block' which is consistent with data transfer in a network service or API, without indicating an error or specific authentication event."}
+ML Label:  api_request
+ML Confidence:  0.6971566256425157
+{"label": "api_request", "confidence": 0.7, "explanation": "The log message indicates receiving a block, which is a data transfer operation, typical of network services or API interactions. It does not strongly align with other categories like errors or authentication."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+{"label": "network_error", "confidence": 0.85, "explanation": "Log indicates a network component 'PacketResponder' terminating, which can be related to network issues."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in the context of network operations often relates to network packet processing and can indicate a network-level issue or termination of a network-related component."}
+ML Label:  api_request
+ML Confidence:  0.6607344085354758
+{"label": "api_request", "confidence": 0.75, "explanation": "The log indicates receiving data, which is a common aspect of API communication, though it lacks explicit API verbs. It's more specific than a general network error as it suggests data transfer rather than a connection issue."}
+ML Label:  network_error
+ML Confidence:  0.9059595553299071
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_error
+ML Confidence:  0.33149416836180784
+ML Label:  api_request
+ML Confidence:  0.7183235767693723
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.47490950395434267
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  api_request
+ML Confidence:  0.7299371753921017
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  api_request
+ML Confidence:  0.7907852023298126
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  api_request
+ML Confidence:  0.3829787664724402
+ML Label:  api_request
+ML Confidence:  0.5619238025218404
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  api_request
+ML Confidence:  0.5705036632946578
+{"label": "api_request", "confidence": 0.70, "explanation": "This message appears to describe the reception of a data block with source and destination addresses, indicative of network communication potentially related to an API or data transfer process. It does not fit other specific error categories."}
+ML Label:  network_error
+ML Confidence:  0.8187860117310012
+ML Label:  api_request
+ML Confidence:  0.487340602703467
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to describe the reception of a data block, which is characteristic of a network data transfer or API interaction, rather than an error or authentication event. Without more context, it's the most fitting category."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "Indicates reception of a data block, often part of a larger data transfer operation like a file upload or system update, which can be considered a form of API interaction. Less specific than other categories."}
+```
+ML Label:  network_traffic
+ML Confidence:  0.533229611392412
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to be a status update related to data transmission or network activity, characteristic of a background process or API interaction, but lacks specific error indicators. Without more context, it's the most general fit."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+{"label": "network_error", "confidence": 0.9, "explanation": "Message indicates a network component ('PacketResponder') terminating, often related to network issues."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "Log appears to be a normal data transfer event related to a service or API, possibly a PUT or POST operation involving data blocks. It doesn't fit other specific error categories."}
+```
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+{"label": "network_error", "confidence": 0.85, "explanation": "Indicates termination of a network-related process ('PacketResponder') which can be associated with network issues or disruptions."}
+ML Label:  filesystem_error
+ML Confidence:  0.7639343277366412
+ML Label:  api_request
+ML Confidence:  0.525872745049266
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to be an informational message about receiving data, likely part of a larger network communication or API interaction. It doesn't fit other specific error categories."}
+```
+ML Label:  block_received
+ML Confidence:  0.24994051874741563
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message describes the reception of a data block, which is a common event in data processing or API interactions, but lacks specific error indicators. It could be part of a larger API call or data transfer process."}
+```
+ML Label:  api_request
+ML Confidence:  0.6063339832442185
+{"label": "api_request", "confidence": 0.7, "explanation": "This log indicates the reception of a data block which is a common event in network services and APIs. It's not a clear error or authentication event."}
+ML Label:  api_request
+ML Confidence:  0.6459507479453092
+{"label": "api_request", "confidence": 0.75, "explanation": "This log indicates the reception of a data block, which is a common event in data processing or network communication APIs. It doesn't fit specific error or authentication categories."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999645
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving data, likely part of an API interaction or data transfer process."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to represent a normal data transfer or API interaction, possibly related to block storage or network communication. It doesn't fit the specific error or authentication categories."}
+
+ HYBRID SYSTEM EVALUATION 
+
+                        precision    recall  f1-score   support
+
+             api_error       1.00      1.00      1.00        23
+           api_request       0.95      0.57      0.72       407
+authentication_failure       1.00      1.00      1.00        30
+authentication_success       1.00      1.00      1.00        26
+   configuration_error       1.00      1.00      1.00        23
+        database_error       1.00      1.00      1.00        22
+      filesystem_error       0.86      0.64      0.73       140
+                 label       0.00      0.00      0.00         1
+         network_error       0.98      0.77      0.86       177
+   resource_exhaustion       1.00      1.00      1.00        20
+        security_alert       1.00      1.00      1.00        22
+       service_timeout       1.00      1.00      1.00        21
+               unknown       0.00      0.00      0.00         0
+
+              accuracy                           0.71       912
+             macro avg       0.83      0.77      0.79       912
+          weighted avg       0.95      0.71      0.80       912
+
+
+ LAYER USAGE BREAKDOWN 
+
+llm      562
+regex    225
+ml       125
+Name: count, dtype: int64
+
+ CONFUSION MATRIX 
+
+[[ 23   0   0   0   0   0   0   0   0   0   0   0   0]
+ [  0 233   0   0   0   0  12   0   0   0   0   0 162]
+ [  0   0  30   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0  26   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0  23   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0  22   0   0   0   0   0   0   0]
+ [  0  10   0   0   0   0  90   0   3   0   0   0  37]
+ [  0   1   0   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   3   0 136   0   0   0  38]
+ [  0   0   0   0   0   0   0   0   0  20   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0  22   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0  21   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0]]
+
+Saved confusion matrix image → confusion_matrix.png
+
+
+Saved confusion matrix image → confusion_matrix.png
+

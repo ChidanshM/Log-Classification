@@ -1,0 +1,1822 @@
+[WARN] Columns 'LogText' and 'Label' not found. Assuming the CSV has NO HEADER.
+Initializing classifier...
+
+Loaded 912 evaluation samples.
+Starting parallel evaluation with 16 workers...
+Evaluating:   0%|          | 0/912 [00:00<?, ?it/s]Evaluating:   0%|          | 1/912 [00:00<07:20,  2.07it/s]Evaluating:   0%|          | 2/912 [00:01<07:54,  1.92it/s]Evaluating:   1%|          | 8/912 [00:01<01:32,  9.78it/s]Evaluating:   2%|▏         | 15/912 [00:01<00:49, 18.08it/s]Evaluating:   2%|▏         | 20/912 [00:01<00:39, 22.40it/s]Evaluating:   3%|▎         | 24/912 [00:04<03:41,  4.02it/s]Evaluating:   3%|▎         | 30/912 [00:04<02:19,  6.30it/s]Evaluating:   4%|▍         | 36/912 [00:04<01:37,  8.99it/s]Evaluating:   5%|▍         | 42/912 [00:04<01:10, 12.29it/s]Evaluating:   5%|▌         | 46/912 [00:07<03:24,  4.23it/s]Evaluating:   5%|▌         | 49/912 [00:07<02:49,  5.09it/s]ML Label:  api_request
+ML Confidence:  0.5026421413092016
+ML Label:  api_request
+ML Confidence:  0.4375360219758816
+ML Label:  api_request
+ML Confidence:  0.4317011886197087
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.5507053664059256
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  api_request
+ML Confidence:  0.4758119131757487
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024631
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  network_traffic
+ML Confidence:  0.5293627608699881
+ML Label:  network_error
+ML Confidence:  0.21772859362605104
+ML Label:  api_request
+ML Confidence:  0.4708703830124844
+ML Label:  network_message
+ML Confidence:  0.3243823689041711
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.588238327690504
+{"label": "api_request", "confidence": 0.65, "explanation": "Generic log message, could be a simple log entry, but API request is a plausible context for a single word log."}
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message appears to describe a normal data transfer operation, possibly related to a network protocol or distributed system, which aligns with the general nature of API requests in a broad sense."}
+{"label": "api_request", "confidence": 0.85, "explanation": "This message indicates the reception of data ('block') from a specific network address, which is a typical characteristic of an API request or data transfer within a service."}
+ML Label:  network_error
+ML Confidence:  0.7712761193330412
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to describe a network transaction related to receiving data blocks, which is a common pattern in API interactions or service communication, but lacks specific error indicators."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "api_request", "confidence": 0.7, "explanation": "This log indicates receiving data related to a 'block', which is common in network protocols or data transfer operations, aligning with the general nature of API requests or data handling."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_activity
+ML Confidence:  0.499533204996007
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be an internal service communication or data transfer message, which falls under the general category of API requests or internal service interactions."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+```json
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes receiving a block of data, which is a common pattern in network communication, often associated with data transfer protocols or API interactions. It doesn't fit the other specific error categories."}
+```
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and the context of termination suggest a network-related issue or failure within packet processing, fitting the network_error category."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message indicates receiving a data block, which is characteristic of an API or service interaction. The format suggests a transfer of information between network endpoints."}
+{"label": "api_request", "confidence": 0.6, "explanation": "This log message appears to describe a network data transfer or API-like communication event, but lacks specific keywords to definitively classify it as an API request, error, or network error. The lack of a clear HTTP verb or error code makes it ambiguous."}
+{"label": "api_request", "confidence": 0.70, "explanation": "This log message describes receiving data (a block) from a specific IP address, which is a common pattern in network-based data transfer or API interactions, rather than a clear error or authentication event."}
+ML Label:  api_request
+ML Confidence:  0.4265293037045331
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+{"label": "network_error", "confidence": 0.85, "explanation": "The log message indicates a 'PacketResponder' terminating, which often relates to network packet handling and potential issues during communication."}
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates receipt of a data block, likely part of a larger data transfer or API interaction."}
+{"label": "api_request", "confidence": 0.70, "explanation": "This log message appears to describe the reception of data ('block') from a network source, which is consistent with a data transfer operation, a type of API interaction, though not a standard HTTP method."}
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+{"label": "network_error", "confidence": 0.75, "explanation": "Log message indicates a network component 'PacketResponder' terminating, which is often associated with network issues or disconnections."}
+ML Label:  block_received
+ML Confidence:  0.24453544443621492
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999645
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  network_traffic
+ML Confidence:  0.5444295213441869
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+```json
+{"label": "api_request", "confidence": 0.85, "explanation": "This log indicates the receipt of a data block, which is a typical operation within a data-processing API or service. While not explicitly stating an HTTP verb, it describes a data transfer, aligning with the function of an API request handling data."}
+```
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+{"label": "api_request", "confidence": 0.90, "explanation": "Log indicates receipt of a data block, characteristic of a network or API data transfer."}
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999648
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274229
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627417
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  api_request
+ML Confidence:  0.6132503273507046
+ML Label:  api_request
+ML Confidence:  0.4713390610937488
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  block_received
+ML Confidence:  0.2445354444362148
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.4194316923021855
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  network_request
+ML Confidence:  0.369660672696307
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  resource_exhaustion
+ML Confidence:  0.6481822420364756
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627418
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  api_request
+ML Confidence:  0.6640572242686698
+ML Label:  block_received
+ML Confidence:  0.24453544443621492
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318Evaluating:   6%|▌         | 54/912 [00:07<02:00,  7.12it/s]Evaluating:   7%|▋         | 61/912 [00:07<01:17, 10.95it/s]Evaluating:   7%|▋         | 65/912 [00:10<03:25,  4.11it/s]Evaluating:   7%|▋         | 68/912 [00:11<02:52,  4.90it/s]Evaluating:   8%|▊         | 74/912 [00:11<01:54,  7.29it/s]Evaluating:   9%|▊         | 79/912 [00:11<01:25,  9.78it/s]Evaluating:   9%|▉         | 83/912 [00:14<03:33,  3.89it/s]Evaluating:   9%|▉         | 86/912 [00:14<02:53,  4.77it/s]Evaluating:  10%|▉         | 90/912 [00:14<02:08,  6.39it/s]Evaluating:  10%|█         | 94/912 [00:14<01:36,  8.45it/s]Evaluating:  11%|█         | 99/912 [00:14<01:11, 11.31it/s]Evaluating:  11%|█▏        | 103/912 [00:17<03:29,  3.87it/s]Evaluating:  12%|█▏        | 106/912 [00:17<02:49,  4.77it/s]Evaluating:  12%|█▏        | 110/912 [00:17<02:04,  6.45it/s]Evaluating:  13%|█▎        | 116/912 [00:17<01:20,  9.86it/s]Evaluating:  13%|█▎        | 120/912 [00:17<01:03, 12.40it/s]Evaluating:  14%|█▎        | 124/912 [00:18<01:19,  9.86it/s]Evaluating:  14%|█▍        | 127/912 [00:20<03:16,  3.99it/s]Evaluating:  14%|█▍        | 130/912 [00:20<02:34,  5.06it/s]Evaluating:  15%|█▍        | 133/912 [00:20<02:03,  6.32it/s]Evaluating:  15%|█▌        | 138/912 [00:21<01:21,  9.47it/s]Evaluating:  16%|█▌        | 144/912 [00:21<01:19,  9.62it/s]Evaluating:  16%|█▌        | 147/912 [00:23<03:09,  4.03it/s]Evaluating:  17%|█▋        | 152/912 [00:24<02:13,  5.71it/s]Evaluating:  17%|█▋        | 156/912 [00:24<01:45,  7.20it/s]Evaluating:  18%|█▊        | 161/912 [00:24<01:38,  7.65it/s]Evaluating:  18%|█▊        | 163/912 [00:27<03:32,  3.53it/s]Evaluating:  18%|█▊        | 165/912 [00:27<03:00,  4.13it/s]Evaluating:  19%|█▊        | 169/912 [00:27<02:07,  5.82it/s]Evaluating:  19%|█▉        | 174/912 [00:27<01:27,  8.46it/s]Evaluating:  20%|█▉        | 179/912 [00:27<01:01, 11.96it/s]
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.6585390112961843
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625997
+ML Label:  network_error
+ML Confidence:  0.4923287340085865
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  api_request
+ML Confidence:  0.5269391089411345
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  api_request
+ML Confidence:  0.5146780504217628
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  api_request
+ML Confidence:  0.4656330839962649
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625998
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+ML Label:  api_request
+ML Confidence:  0.6804784404830657
+ML Label:  api_request
+ML Confidence:  0.361826124402682
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  api_request
+ML Confidence:  0.47128696873783965
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+ML Label:  api_request
+ML Confidence:  0.515889212847689
+ML Label:  network_error
+ML Confidence:  0.7712761193330412
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.5766590869045807
+ML Label:  name_system_operation
+ML Confidence:  0.1055300454334815
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  api_request
+ML Confidence:  0.6080071323488344
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965614
+ML Label:  block_received
+ML Confidence:  0.24453544443621486
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  filesystem_error
+ML Confidence:  0.9342515919267724
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  network_error
+ML Confidence:  0.49616175614871044
+ML Label:  api_request
+ML Confidence:  0.49079807301263645
+ML Label:  api_request
+ML Confidence:  0.46282424766263763
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  api_request
+ML Confidence:  0.4918713510640518
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  log_event
+ML Confidence:  0.10480829299315939
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228242
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  api_request
+ML Confidence:  0.6528619721975101
+ML Label:  network_error
+ML Confidence:  0.49056681816221903
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  api_request
+ML Confidence:  0.5672651569025111
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "api_request", "confidence": 0.75, "explanation": "This log indicates the reception of a data block, which is a common event in network protocols or data transfer operations that are part of an API's functionality. It doesn't explicitly point to an error, success, or specific resource issue."}
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.5011156982679832
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  api_request
+ML Confidence:  0.504899004719932
+ML Label:  api_request
+ML Confidence:  0.46475284721146165
+ML Label:  api_request
+ML Confidence:  0.731744690540057
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  api_request
+ML Confidence:  0.47075940357923474
+ML Label:  network_error
+ML Confidence:  0.8955183946211808
+ML Label:  api_request
+ML Confidence:  0.4695936187470733
+ML Label:  filesystem_error
+ML Confidence:  0.9459330945366418
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999645
+ML Label:  api_request
+ML Confidence:  0.7256529785627975
+ML Label:  api_request
+ML Confidence:  0.507650135297128
+ML Label:  api_request
+ML Confidence:  0.7870030030144374
+ML Label:  api_request
+ML Confidence:  0.5537725043552327
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  network_error
+ML Confidence:  0.5307449723103923
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_request
+ML Confidence:  0.36573262087841457
+ML Label:  network_request
+ML Confidence:  0.5335743811562421
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999648
+ML Label:  api_request
+ML Confidence:  0.42873529067033656
+ML Label:  api_request
+ML Confidence:  0.5258287976477242
+ML Label:  api_request
+ML Confidence:  0.5123892164861141
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228245
+ML Label:  network_error
+ML Confidence:  0.3737247843140646
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  block_received
+ML Confidence:  0.2445354444362148
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  api_request
+ML Confidence:  0.46293112409404896
+ML Label:  api_request
+ML Confidence:  0.5240554216338378
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  block_received
+ML Confidence:  0.2445354444362148
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  api_request
+ML Confidence:  0.6607972898666175
+ML Label:  log_event
+ML Confidence:  0.10480829299315937
+ML Label:  api_request
+ML Confidence:  0.48286201031172815
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  block_received
+ML Confidence:  0.2445354444362149
+ML Label:  api_request
+ML Confidence:  0.6348245331961909
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  api_request
+ML Confidence:  0.5195029837608242
+ML Label:  api_request
+ML Confidence:  0.633254543402089
+ML Label:  api_request
+ML Confidence:  0.559611581484604
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  api_request
+ML Confidence:  0.6322062169770273
+ML Label:  block_received
+ML Confidence:  0.24453544443621478
+ML Label:  service_request
+ML Confidence:  0.10379609130335506
+ML Label:  network_error
+ML Confidence:  0.8955183946211807
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605858
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  api_request
+ML Confidence:  0.5875018162184877
+ML Label:  api_request
+ML Confidence:  0.5892364016900133
+ML Label:  api_request
+ML Confidence:  0.5914010877335923
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  api_request
+ML Confidence:  0.5642139981449233
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228242
+ML Label:  network_data_transfer
+ML Confidence: Evaluating:  20%|█▉        | 182/912 [00:30<03:17,  3.69it/s]Evaluating:  20%|██        | 185/912 [00:30<02:36,  4.65it/s]Evaluating:  21%|██        | 188/912 [00:30<02:07,  5.68it/s]Evaluating:  21%|██        | 191/912 [00:30<01:38,  7.29it/s]Evaluating:  21%|██▏       | 194/912 [00:30<01:18,  9.18it/s]Evaluating:  22%|██▏       | 197/912 [00:33<03:58,  2.99it/s]Evaluating:  22%|██▏       | 199/912 [00:33<03:15,  3.65it/s]Evaluating:  22%|██▏       | 203/912 [00:33<02:08,  5.52it/s]Evaluating:  23%|██▎       | 206/912 [00:33<01:40,  7.06it/s]Evaluating:  23%|██▎       | 209/912 [00:33<01:22,  8.56it/s]Evaluating:  23%|██▎       | 214/912 [00:34<01:17,  9.00it/s]Evaluating:  24%|██▎       | 216/912 [00:36<03:27,  3.35it/s]Evaluating:  24%|██▍       | 218/912 [00:36<02:51,  4.05it/s]Evaluating:  24%|██▍       | 223/912 [00:36<01:46,  6.49it/s]Evaluating:  25%|██▍       | 227/912 [00:37<01:18,  8.77it/s]Evaluating:  25%|██▌       | 230/912 [00:37<01:05, 10.37it/s]Evaluating:  26%|██▌       | 233/912 [00:39<03:29,  3.24it/s]Evaluating:  26%|██▌       | 235/912 [00:40<02:54,  3.87it/s]Evaluating:  26%|██▌       | 238/912 [00:40<02:07,  5.27it/s]Evaluating:  26%|██▋       | 240/912 [00:40<01:47,  6.27it/s]Evaluating:  27%|██▋       | 244/912 [00:40<01:17,  8.62it/s]Evaluating:  27%|██▋       | 247/912 [00:40<01:04, 10.31it/s]Evaluating:  27%|██▋       | 249/912 [00:43<03:55,  2.81it/s]Evaluating:  28%|██▊       | 253/912 [00:43<02:30,  4.37it/s]Evaluating:  28%|██▊       | 256/912 [00:43<01:53,  5.79it/s]Evaluating:  29%|██▊       | 260/912 [00:43<01:20,  8.14it/s]Evaluating:  29%|██▉       | 263/912 [00:43<01:07,  9.57it/s]Evaluating:  29%|██▉       | 266/912 [00:43<00:56, 11.46it/s]Evaluating:  29%|██▉       | 269/912 [00:46<03:20,  3.20it/s]Evaluating:  30%|██▉       | 272/912 [00:46<02:28,  4.31it/s]Evaluating:  30%|███       | 274/912 [00:46<02:03,  5.19it/s]Evaluating:  31%|███       | 279/912 [00:46<01:14,  8.48it/s]Evaluating:  31%|███       | 282/912 [00:46<01:02, 10.07it/s]Evaluating:  31%|███▏      | 286/912 [00:46<00:48, 12.97it/s]Evaluating:  32%|███▏      | 289/912 [00:47<01:00, 10.22it/s]Evaluating:  32%|███▏      | 292/912 [00:49<02:50,  3.65it/s]Evaluating:  32%|███▏      | 295/912 [00:49<02:12,  4.67it/s]Evaluating:  33%|███▎      | 301/912 [00:49<01:16,  7.95it/s]Evaluating:  34%|███▎      | 307/912 [00:50<00:52, 11.62it/s] 0.14946467550999654
+ML Label:  network_error
+ML Confidence:  0.5441869302603266
+ML Label:  network_traffic
+ML Confidence:  0.5213787637624924
+ML Label:  name_system_operation
+ML Confidence:  0.1055300454334814
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_traffic
+ML Confidence:  0.5519286838421218
+ML Label:  api_request
+ML Confidence:  0.5586184867479842
+ML Label:  api_request
+ML Confidence:  0.47919985187117115
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  network_activity
+ML Confidence:  0.6304543517641974
+ML Label:  api_request
+ML Confidence:  0.6576911148509025
+ML Label:  network_error
+ML Confidence:  0.4427235437777676
+ML Label:  api_request
+ML Confidence:  0.6893533004068653
+ML Label:  api_request
+ML Confidence:  0.5285654649719638
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  network_traffic
+ML Confidence:  0.5625953875183352
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_error
+ML Confidence:  0.44008684383904223
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  api_request
+ML Confidence:  0.45126055297323675
+ML Label:  api_request
+ML Confidence:  0.6263068028817835
+ML Label:  api_request
+ML Confidence:  0.38720075369547646
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  api_request
+ML Confidence:  0.5149104789146818
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  api_request
+ML Confidence:  0.6850414787507515
+ML Label:  api_request
+ML Confidence:  0.5441553595568871
+ML Label:  api_request
+ML Confidence:  0.4728385709264496
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  api_request
+ML Confidence:  0.5700605821583612
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  network_activity
+ML Confidence:  0.4728238257726687
+ML Label:  filesystem_error
+ML Confidence:  1.0
+ML Label:  api_request
+ML Confidence:  0.5554309447987875
+ML Label:  api_request
+ML Confidence:  0.5708300249581597
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  network_error
+ML Confidence:  0.45487284283029433
+ML Label:  api_error
+ML Confidence:  0.2484032987958014
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  api_request
+ML Confidence:  0.5112090188904167
+ML Label:  network_traffic
+ML Confidence:  0.5520744196805241
+ML Label:  api_request
+ML Confidence:  0.5707246381350454
+ML Label:  api_request
+ML Confidence:  0.5124164596847829
+ML Label:  network_traffic
+ML Confidence:  0.5401019769571669
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  api_request
+ML Confidence:  0.47564507194409467
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  api_request
+ML Confidence:  0.6046175598101984
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  service_request
+ML Confidence:  0.10379609130335506
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833193
+ML Label:  api_request
+ML Confidence:  0.6283222243662214
+ML Label:  api_request
+ML Confidence:  0.5007220853448375
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  api_request
+ML Confidence:  0.6688012377085876
+ML Label:  api_request
+ML Confidence:  0.5914202317493963
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+ML Label:  api_request
+ML Confidence:  0.3540462463136676
+ML Label:  service_request
+ML Confidence:  0.10379609130335508
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  api_error
+ML Confidence:  0.2484032987958013
+ML Label:  api_request
+ML Confidence:  0.5731383379962874
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625998
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348145
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  api_request
+ML Confidence:  0.44111784590051445
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  api_request
+ML Confidence:  0.5642472531482567
+ML Label:  api_request
+ML Confidence:  0.4409089009524505
+ML Label:  system_operation
+ML Confidence:  0.15584867173565622
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348149
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627415
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274224
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024631
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.5030579609659882
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  system_operation
+ML Confidence:  0.15584867173565622
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  api_request
+ML Confidence:  0.7692129478233557
+ML Label:  api_request
+ML Confidence:  0.6474675166037716
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348145
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  network_error
+ML Confidence:  0.8955183946211801
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605859
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024631
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605863
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999648
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627417
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627415
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348149
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333988
+ML Label:  log_event
+ML Confidence:  0.10480829299315948
+ML Label:  filesystem_error
+ML Confidence:  0.763934327736641
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625997
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627415
+ML Label:  service_request
+ML Confidence: Evaluating:  34%|███▍      | 313/912 [00:50<00:38, 15.70it/s]Evaluating:  35%|███▍      | 317/912 [00:52<02:11,  4.54it/s]Evaluating:  35%|███▌      | 321/912 [00:53<01:41,  5.83it/s]Evaluating:  36%|███▌      | 324/912 [00:53<01:24,  7.00it/s]Evaluating:  36%|███▌      | 327/912 [00:53<01:08,  8.58it/s]Evaluating:  36%|███▋      | 331/912 [00:53<00:51, 11.38it/s]Evaluating:  37%|███▋      | 335/912 [00:56<02:33,  3.76it/s]Evaluating:  37%|███▋      | 338/912 [00:56<02:02,  4.70it/s]Evaluating:  37%|███▋      | 341/912 [00:56<01:35,  5.95it/s]Evaluating:  38%|███▊      | 344/912 [00:56<01:14,  7.60it/s]Evaluating:  38%|███▊      | 349/912 [00:56<00:49, 11.39it/s]Evaluating:  39%|███▊      | 353/912 [00:56<00:39, 14.30it/s]Evaluating:  39%|███▉      | 357/912 [00:59<02:20,  3.96it/s]Evaluating:  39%|███▉      | 360/912 [00:59<01:49,  5.03it/s]Evaluating:  40%|███▉      | 363/912 [00:59<01:29,  6.12it/s]Evaluating:  40%|████      | 367/912 [00:59<01:04,  8.43it/s]Evaluating:  41%|████      | 373/912 [00:59<00:41, 12.90it/s]Evaluating:  41%|████▏     | 377/912 [01:00<01:09,  7.67it/s]Evaluating:  42%|████▏     | 380/912 [01:01<01:08,  7.78it/s]Evaluating:  42%|████▏     | 384/912 [01:01<00:51, 10.23it/s]Evaluating:  42%|████▏     | 387/912 [01:01<00:46, 11.35it/s]Evaluating:  43%|████▎     | 391/912 [01:01<00:35, 14.53it/s] 0.10379609130335503
+ML Label:  api_error
+ML Confidence:  0.2484032987958013
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833177
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  api_error
+ML Confidence:  0.2484032987958013
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+ML Label:  api_request
+ML Confidence:  0.6056547556319495
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  system_operation
+ML Confidence:  0.1558486717356562
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605858
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  network_error
+ML Confidence:  0.4609232695049023
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627417
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627417
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  service_request
+ML Confidence:  0.10379609130335506
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274225
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274231
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  network_error
+ML Confidence:  0.8955183946211801
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605856
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833177
+ML Label:  api_request
+ML Confidence:  0.49741159691543146
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  network_error
+ML Confidence:  0.8187860117310012
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  service_request
+ML Confidence:  0.10379609130335503
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274225
+ML Label:  network_request
+ML Confidence:  0.36573262087841435
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  api_request
+ML Confidence:  0.46743799127575875
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  api_request
+ML Confidence:  0.5764539565751052
+{"label": "api_request", "confidence": 0.75, "explanation": "This log indicates the reception of a data block from a specific IP address, which is consistent with a data transfer or an API interaction, but not explicitly an error or authentication event."}
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625995
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and the general context of network packets suggest a network-related issue, possibly a connection reset or termination."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message describes an operation within a distributed system (likely related to storage or data management) which can be considered an internal API-like request for updating block information."}
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627414
+{"label": "api_request", "confidence": 0.7, "explanation": "This log indicates a successful update to a block map in a distributed file system, which is an internal API call or operation within the system. It doesn't represent an error or authentication event."}
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627412
+ML Label:  api_error
+ML Confidence:  0.24840329879580136
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024631
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log indicates a block being added to a filesystem/storage system, which can sometimes be related to filesystem operations and potential errors if it fails or encounters issues, although it's not a direct error message."}
+ML Label:  api_request
+ML Confidence:  0.49669630798260506
+```json
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates receipt of data ('block') from a network address, resembling a data transfer or API-like interaction, but not explicitly an error or authentication event."}
+```
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "The log message contains 'BLOCK' and 'addStoredBlock', which are related to file system operations. While not a direct error, it indicates a file system management action, fitting best within this category."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log message indicates a block storage operation, potentially related to filesystem management, but lacks specific error indicators for other categories."}
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and the context of terminating suggest a network-related issue or disruption."}
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605862
+{"label": "api_request", "confidence": 0.7, "explanation": "Log indicates receiving data, likely part of a network communication or API interaction. Without more context, it's treated as a general request/data transfer event."}
+ML Label:  api_request
+ML Confidence:  0.610577111301751
+ML Label:  log_event
+ML Confidence:  0.10480829299315943
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+{"label": "api_request", "confidence": 0.7, "explanation": "The log message indicates receiving a block, which is a common operation in distributed systems and can be considered an API-level interaction, though not explicitly an HTTP request. It's more specific than a general network error or service timeout."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+{"label": "api_request", "confidence": 0.85, "explanation": "This log message describes an update to a block map within a NameSystem, likely part of a distributed file system or storage service. The 'addStoredBlock' and the inclusion of an IP address and port suggest an internal API-like operation related to data management, which falls under normal API requests."}
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+{"label": "api_request", "confidence": 0.80, "explanation": "Indicates receipt of a data block, consistent with a data transfer or API interaction."}Evaluating:  43%|████▎     | 394/912 [01:01<00:38, 13.34it/s]Evaluating:  44%|████▎     | 397/912 [01:02<00:35, 14.64it/s]Evaluating:  44%|████▍     | 400/912 [01:02<00:37, 13.73it/s]Evaluating:  44%|████▍     | 402/912 [01:02<00:41, 12.36it/s]Evaluating:  44%|████▍     | 405/912 [01:02<00:40, 12.53it/s]Evaluating:  45%|████▍     | 409/912 [01:03<00:34, 14.66it/s]Evaluating:  45%|████▌     | 411/912 [01:04<01:59,  4.19it/s]Evaluating:  45%|████▌     | 413/912 [01:04<01:37,  5.12it/s]Evaluating:  46%|████▌     | 415/912 [01:05<01:31,  5.45it/s]Evaluating:  46%|████▌     | 417/912 [01:05<01:15,  6.57it/s]Evaluating:  46%|████▌     | 419/912 [01:05<01:14,  6.66it/s]Evaluating:  46%|████▌     | 421/912 [01:05<01:06,  7.38it/s]Evaluating:  46%|████▋     | 424/912 [01:06<00:58,  8.36it/s]Evaluating:  47%|████▋     | 428/912 [01:06<00:41, 11.54it/s]Evaluating:  47%|████▋     | 430/912 [01:08<02:09,  3.71it/s]Evaluating:  47%|████▋     | 433/912 [01:08<01:33,  5.12it/s]Evaluating:  48%|████▊     | 435/912 [01:08<01:24,  5.62it/s]Evaluating:  48%|████▊     | 437/912 [01:08<01:11,  6.65it/s]Evaluating:  48%|████▊     | 439/912 [01:08<01:07,  7.05it/s]Evaluating:  48%|████▊     | 441/912 [01:08<01:01,  7.65it/s]Evaluating:  49%|████▊     | 443/912 [01:09<00:50,  9.23it/s]Evaluating:  49%|████▉     | 445/912 [01:09<00:51,  9.11it/s]Evaluating:  49%|████▉     | 447/912 [01:09<00:45, 10.27it/s]Evaluating:  49%|████▉     | 449/912 [01:11<02:32,  3.03it/s]Evaluating:  50%|████▉     | 452/912 [01:11<01:42,  4.47it/s]Evaluating:  50%|████▉     | 454/912 [01:11<01:36,  4.75it/s]Evaluating:  50%|█████     | 457/912 [01:11<01:14,  6.10it/s]Evaluating:  50%|█████     | 459/912 [01:12<01:06,  6.83it/s]Evaluating:  51%|█████     | 462/912 [01:12<00:49,  9.17it/s]Evaluating:  51%|█████     | 464/912 [01:12<00:50,  8.90it/s]Evaluating:  51%|█████     | 467/912 [01:12<00:41, 10.78it/s]Evaluating:  51%|█████▏    | 469/912 [01:14<02:07,  3.46it/s]Evaluating:  52%|█████▏    | 471/912 [01:14<01:41,  4.35it/s]Evaluating:  52%|█████▏    | 474/912 [01:14<01:14,  5.86it/s]Evaluating:  52%|█████▏    | 476/912 [01:14<01:05,  6.68it/s]Evaluating:  52%|█████▏    | 478/912 [01:15<01:02,  6.92it/s]Evaluating:  53%|█████▎    | 480/912 [01:15<00:58,  7.38it/s]Evaluating:  53%|█████▎    | 482/912 [01:15<00:57,  7.49it/s]Evaluating:  53%|█████▎    | 485/912 [01:15<00:42, 10.00it/s]Evaluating:  53%|█████▎    | 487/912 [01:17<02:11,  3.24it/s]Evaluating:  54%|█████▎    | 489/912 [01:17<01:41,  4.19it/s]Evaluating:  54%|█████▍    | 491/912 [01:17<01:19,  5.30it/s]Evaluating:  54%|█████▍    | 493/912 [01:18<01:15,  5.59it/s]Evaluating:  54%|█████▍    | 497/912 [01:18<00:51,  8.13it/s]Evaluating:  55%|█████▍    | 499/912 [01:18<00:48,  8.56it/s]Evaluating:  55%|█████▌    | 502/912 [01:18<00:36, 11.13it/s]Evaluating:  55%|█████▌    | 505/912 [01:18<00:37, 10.93it/s]Evaluating:  56%|█████▌    | 508/912 [01:19<00:29, 13.57it/s]Evaluating:  56%|█████▌    | 510/912 [01:20<01:44,  3.83it/s]
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message appears to describe a successful internal operation related to a distributed system, possibly a block storage service. While not a direct external API call, it represents a successful data/state update analogous to an API operation."}
+ML Label:  api_request
+ML Confidence:  0.690059064952095
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving a data block, characteristic of an API interaction or data transfer, but not an error or authentication event."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.6481822420364755
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' suggest a network-related issue with packet handling."}
+ML Label:  network_message
+ML Confidence:  0.32438236890417116
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "filesystem_error", "confidence": 0.7, "explanation": "Log message contains 'BLOCK*' and mentions block updates, which can relate to file system operations and storage, potentially indicating issues or specific operations within a distributed file system context.  While not a direct error, it relates to block management which falls under filesystem operations."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  api_request
+ML Confidence:  0.66450091740695
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message describes receiving a 'block' which implies a data transfer or communication event, potentially part of a larger API or service interaction. It doesn't fit other categories as well as a general request/response pattern."}
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  block_received
+ML Confidence:  0.24994051874741569
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  network_error
+ML Confidence:  0.4233916896409316
+ML Label:  api_request
+ML Confidence:  0.4580841082260455
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965614
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965617
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  network_request
+ML Confidence:  0.3696606726963067
+ML Label:  api_request
+ML Confidence:  0.5306343973451643
+ML Label:  network_error
+ML Confidence:  0.8955183946211807
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+ML Label:  block_received
+ML Confidence:  0.2445354444362149
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  network_error
+ML Confidence:  0.8187860117310012
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  api_request
+ML Confidence:  0.6922927014792921
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  network_error
+ML Confidence:  0.8187860117310006
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999648
+ML Label:  api_request
+ML Confidence:  0.43240290896927264
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  api_request
+ML Confidence:  0.6586759494801503
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  api_request
+ML Confidence:  0.6196575990764857
+ML Label:  block_received
+ML Confidence:  0.2499405187474158
+ML Label:  api_request
+ML Confidence:  0.4965557665783705
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+ML Label:  api_request
+ML Confidence:  0.43455486587331543
+ML Label:  api_request
+ML Confidence:  0.5341947273289684
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  api_request
+ML Confidence:  0.4803184586784716
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  api_request
+ML Confidence:  0.7669646009722056
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  network_request
+ML Confidence:  0.24954819282410412
+ML Label:  api_request
+ML Confidence:  0.6157985094285265
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333993
+ML Label:  api_request
+ML Confidence:  0.38233560171915243
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  network_request
+ML Confidence:  0.3696606726963069
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  api_request
+ML Confidence:  0.7233069975895436
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333988
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  api_request
+ML Confidence:  0.5871725855038862
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  api_request
+ML Confidence:  0.8212671626309266
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.6392159512794072
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  resource_exhaustion
+ML Confidence:  0.5875596497690934
+ML Label:  api_request
+ML Confidence:  0.47324636717185564
+ML Label:  network_request
+ML Confidence:  0.2495481928241041
+ML Label:  block_received
+ML Confidence:  0.2445354444362148
+ML Label:  api_request
+ML Confidence:  0.5113750522541224
+ML Label:  resource_exhaustion
+ML Confidence:  0.5875596497690936
+ML Label:  filesystem_error
+ML Confidence:  0.9959919533851276
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  network_error
+ML Confidence:  0.31577362923723035
+ML Label:  network_error
+ML Confidence:  0.24294541629680372
+ML Label:  api_request
+ML Confidence:  0.23544790673989893
+ML Label:  network_error
+ML Confidence:  0.30021250020216306
+ML Label:  api_request
+ML Confidence:  0.26403696899291046
+ML Label:  network_error
+ML Confidence:  0.22691806361675212
+ML Label:  api_request
+ML Confidence:  0.26927497980624504
+ML Label:  network_error
+ML Confidence:  0.24862947559503645
+ML Label:  api_request
+ML Confidence:  0.1930733069114474
+ML Label:  network_error
+ML Confidence:  0.24604506022150083
+ML Label:  network_error
+ML Confidence:  0.253961349559887
+ML Label:  api_request
+ML Confidence:  0.22277882016361736
+ML Label:  api_request
+ML Confidence:  0.26230563551744446
+ML Label:  api_request
+ML Confidence:  0.20837184306811232
+ML Label:  network_error
+ML Confidence:  0.2339703873623686
+ML Label:  network_error
+ML Confidence:  0.3189486370901731
+ML Label:  network_error
+ML Confidence:  0.21557420768840563
+ML Label:  api_requestEvaluating:  56%|█████▋    | 514/912 [01:20<01:06,  6.00it/s]Evaluating:  57%|█████▋    | 517/912 [01:21<01:03,  6.23it/s]Evaluating:  57%|█████▋    | 521/912 [01:21<00:47,  8.29it/s]Evaluating:  58%|█████▊    | 525/912 [01:21<00:39,  9.85it/s]Evaluating:  58%|█████▊    | 528/912 [01:22<00:40,  9.59it/s]Evaluating:  58%|█████▊    | 530/912 [01:22<00:36, 10.57it/s]Evaluating:  58%|█████▊    | 533/912 [01:24<01:31,  4.12it/s]Evaluating:  59%|█████▊    | 535/912 [01:24<01:16,  4.95it/s]Evaluating:  59%|█████▉    | 540/912 [01:24<00:45,  8.20it/s]Evaluating:  60%|█████▉    | 543/912 [01:24<00:43,  8.58it/s]Evaluating:  60%|█████▉    | 545/912 [01:24<00:41,  8.82it/s]Evaluating:  60%|██████    | 549/912 [01:25<00:34, 10.55it/s]Evaluating:  61%|██████    | 552/912 [01:25<00:36,  9.90it/s]Evaluating:  61%|██████    | 555/912 [01:25<00:29, 12.23it/s]Evaluating:  61%|██████    | 557/912 [01:27<01:30,  3.92it/s]Evaluating:  61%|██████▏   | 559/912 [01:27<01:13,  4.81it/s]Evaluating:  62%|██████▏   | 561/912 [01:27<00:59,  5.91it/s]Evaluating:  62%|██████▏   | 563/912 [01:27<00:57,  6.03it/s]Evaluating:  62%|██████▏   | 566/912 [01:27<00:44,  7.71it/s]Evaluating:  62%|██████▏   | 568/912 [01:28<00:44,  7.70it/s]Evaluating:  63%|██████▎   | 572/912 [01:28<00:38,  8.92it/s]Evaluating:  63%|██████▎   | 576/912 [01:28<00:26, 12.60it/s]Evaluating:  63%|██████▎   | 579/912 [01:30<01:15,  4.42it/s]Evaluating:  64%|██████▎   | 581/912 [01:30<01:14,  4.47it/s]Evaluating:  64%|██████▍   | 585/912 [01:31<00:54,  6.02it/s]Evaluating:  65%|██████▍   | 589/912 [01:31<00:42,  7.58it/s]Evaluating:  65%|██████▌   | 593/912 [01:31<00:36,  8.65it/s]Evaluating:  65%|██████▌   | 595/912 [01:31<00:32,  9.68it/s]Evaluating:  65%|██████▌   | 597/912 [01:33<01:26,  3.65it/s]Evaluating:  66%|██████▌   | 602/912 [01:34<00:59,  5.25it/s]Evaluating:  66%|██████▋   | 605/912 [01:34<00:45,  6.69it/s]Evaluating:  67%|██████▋   | 607/912 [01:34<00:41,  7.31it/s]Evaluating:  67%|██████▋   | 610/912 [01:34<00:37,  8.13it/s]Evaluating:  67%|██████▋   | 615/912 [01:34<00:29, 10.03it/s]Evaluating:  68%|██████▊   | 618/912 [01:35<00:24, 12.04it/s]Evaluating:  68%|██████▊   | 620/912 [01:36<01:11,  4.06it/s]Evaluating:  68%|██████▊   | 622/912 [01:37<01:08,  4.24it/s]Evaluating:  69%|██████▉   | 627/912 [01:37<00:40,  7.10it/s]Evaluating:  69%|██████▉   | 630/912 [01:37<00:41,  6.86it/s]Evaluating:  70%|██████▉   | 636/912 [01:38<00:29,  9.47it/s]Evaluating:  70%|███████   | 641/912 [01:38<00:20, 13.00it/s]Evaluating:  71%|███████   | 644/912 [01:40<00:52,  5.10it/s]Evaluating:  71%|███████   | 647/912 [01:40<00:47,  5.56it/s]Evaluating:  71%|███████▏  | 651/912 [01:40<00:38,  6.79it/s]Evaluating:  72%|███████▏  | 654/912 [01:41<00:34,  7.51it/s]Evaluating:  72%|███████▏  | 659/912 [01:41<00:27,  9.34it/s]Evaluating:  73%|███████▎  | 662/912 [01:41<00:23, 10.62it/s]Evaluating:  73%|███████▎  | 664/912 [01:43<00:59,  4.14it/s]Evaluating:  73%|███████▎  | 667/912 [01:43<00:51,  4.77it/s]Evaluating:  74%|███████▎  | 672/912 [01:44<00:35,  6.68it/s]Evaluating:  74%|███████▍  | 677/912 [01:44<00:27,  8.61it/s]Evaluating:  75%|███████▍  | 680/912 [01:44<00:26,  8.88it/s]Evaluating:  75%|███████▌  | 685/912 [01:44<00:18, 12.04it/s]Evaluating:  75%|███████▌  | 687/912 [01:46<00:49,  4.51it/s]Evaluating:  76%|███████▌  | 691/912 [01:46<00:39,  5.60it/s]Evaluating:  77%|███████▋  | 698/912 [01:47<00:25,  8.45it/s]Evaluating:  77%|███████▋  | 700/912 [01:47<00:26,  8.08it/s]
+ML Confidence:  0.19264402296573355
+ML Label:  network_error
+ML Confidence:  0.2929526857501247
+ML Label:  network_error
+ML Confidence:  0.2461308288496982
+ML Label:  api_request
+ML Confidence:  0.21247127007166727
+ML Label:  network_error
+ML Confidence:  0.2559218859645671
+ML Label:  network_error
+ML Confidence:  0.2636736714853449
+ML Label:  network_error
+ML Confidence:  0.24890452270770674
+ML Label:  network_error
+ML Confidence:  0.22142800427981263
+ML Label:  filesystem_error
+ML Confidence:  0.20890009400611412
+ML Label:  network_error
+ML Confidence:  0.26090305762118654
+ML Label:  network_error
+ML Confidence:  0.21743355411339121
+ML Label:  network_error
+ML Confidence:  0.2483122890299275
+ML Label:  api_request
+ML Confidence:  0.24964931806052745
+ML Label:  network_error
+ML Confidence:  0.21402493146528637
+ML Label:  network_error
+ML Confidence:  0.2641768276903272
+ML Label:  network_error
+ML Confidence:  0.2447090483437261
+ML Label:  network_error
+ML Confidence:  0.2035433175402198
+ML Label:  network_error
+ML Confidence:  0.27426758601995976
+ML Label:  api_request
+ML Confidence:  0.21452719700786255
+ML Label:  network_error
+ML Confidence:  0.2635721170634279
+ML Label:  network_error
+ML Confidence:  0.21741341190160524
+ML Label:  network_error
+ML Confidence:  0.23581451238303383
+ML Label:  network_error
+ML Confidence:  0.2514753731128131
+ML Label:  network_error
+ML Confidence:  0.23033264620628366
+ML Label:  network_error
+ML Confidence:  0.2559522890462538
+ML Label:  network_error
+ML Confidence:  0.23503629802822096
+ML Label:  network_error
+ML Confidence:  0.2365953040289096
+ML Label:  network_error
+ML Confidence:  0.24979285871857518
+ML Label:  network_error
+ML Confidence:  0.2395680956168263
+ML Label:  api_request
+ML Confidence:  0.2325407859839537
+ML Label:  network_error
+ML Confidence:  0.25728798668605807
+ML Label:  network_error
+ML Confidence:  0.22127981366501007
+ML Label:  api_request
+ML Confidence:  0.23864789901126757
+ML Label:  api_request
+ML Confidence:  0.21262081651860107
+ML Label:  api_request
+ML Confidence:  0.2612119720929325
+ML Label:  network_error
+ML Confidence:  0.2096452312739186
+ML Label:  network_error
+ML Confidence:  0.2728891265819928
+ML Label:  api_request
+ML Confidence:  0.22964627608356555
+ML Label:  network_error
+ML Confidence:  0.23520269236186114
+ML Label:  network_error
+ML Confidence:  0.31955872842937333
+ML Label:  api_request
+ML Confidence:  0.21928909487308354
+ML Label:  network_error
+ML Confidence:  0.2302242389950823
+ML Label:  network_error
+ML Confidence:  0.24401085497825611
+ML Label:  network_error
+ML Confidence:  0.2235011045097731
+ML Label:  api_request
+ML Confidence:  0.19269738496322844
+ML Label:  network_error
+ML Confidence:  0.2513978537490017
+ML Label:  api_request
+ML Confidence:  0.2814205144762881
+ML Label:  network_error
+ML Confidence:  0.29709087019778246
+ML Label:  network_error
+ML Confidence:  0.2314470294774963
+ML Label:  network_error
+ML Confidence:  0.24721343827256118
+ML Label:  network_error
+ML Confidence:  0.2711904861238018
+ML Label:  network_error
+ML Confidence:  0.22455595856554086
+ML Label:  network_error
+ML Confidence:  0.23572146029257157
+ML Label:  api_request
+ML Confidence:  0.2312093350634795
+ML Label:  network_error
+ML Confidence:  0.23663476552533588
+ML Label:  network_error
+ML Confidence:  0.30682753670139457
+ML Label:  api_request
+ML Confidence:  0.21224124864419772
+ML Label:  api_request
+ML Confidence:  0.2687403454456637
+ML Label:  api_request
+ML Confidence:  0.22056361357680007
+ML Label:  network_error
+ML Confidence:  0.21607219777648756
+ML Label:  network_error
+ML Confidence:  0.25984022391045003
+ML Label:  network_error
+ML Confidence:  0.22387129599717032
+ML Label:  filesystem_error
+ML Confidence:  0.20122010778716176
+ML Label:  network_error
+ML Confidence:  0.1781493796535209
+ML Label:  api_request
+ML Confidence:  0.20669190779429844
+ML Label:  api_request
+ML Confidence:  0.2113037530653708
+ML Label:  network_error
+ML Confidence:  0.27050722214274536
+ML Label:  network_error
+ML Confidence:  0.27168953045691197
+ML Label:  network_error
+ML Confidence:  0.20764954883650735
+ML Label:  network_error
+ML Confidence:  0.2181447331685583
+ML Label:  network_error
+ML Confidence:  0.2985598296929751
+ML Label:  api_request
+ML Confidence:  0.21584122909870362
+ML Label:  api_request
+ML Confidence:  0.258779486366503
+ML Label:  network_error
+ML Confidence:  0.21566431283566903
+ML Label:  network_error
+ML Confidence:  0.188924518011655
+ML Label:  network_error
+ML Confidence:  0.2273503502785452
+ML Label:  network_error
+ML Confidence:  0.23963439974097475
+ML Label:  api_request
+ML Confidence:  0.27702399502944025
+ML Label:  api_request
+ML Confidence:  0.24392820050432712
+ML Label:  network_error
+ML Confidence:  0.26733213924361426
+ML Label:  api_request
+ML Confidence:  0.2896520397453678
+ML Label:  api_request
+ML Confidence:  0.2819530902659108
+ML Label:  network_error
+ML Confidence:  0.3068569283281058
+ML Label:  api_request
+ML Confidence:  0.28407991864527665
+ML Label:  network_error
+ML Confidence:  0.23479372420697556
+ML Label:  api_request
+ML Confidence:  0.2609224556226201
+ML Label:  network_error
+ML Confidence:  0.2987841320960191
+ML Label:  network_error
+ML Confidence:  0.2531070144191606
+ML Label:  api_request
+ML Confidence:  0.29411729720400565
+ML Label:  network_error
+ML Confidence:  0.22688106938614522
+ML Label:  network_error
+ML Confidence:  0.216004573864109
+ML Label:  network_error
+ML Confidence:  0.2335396114856746
+ML Label:  network_error
+ML Confidence:  0.2904574562527238
+ML Label:  network_error
+ML Confidence:  0.30319115046570827
+ML Label:  network_error
+ML Confidence:  0.2243101996843578
+ML Label:  network_error
+ML Confidence:  0.22847374905869747
+ML Label:  api_request
+ML Confidence:  0.22940845068606944
+ML Label:  network_error
+ML Confidence:  0.22217384780467572
+ML Label:  api_request
+ML Confidence:  0.27213278304154864
+ML Label:  network_error
+ML Confidence:  0.19913060638281724
+ML Label:  network_error
+ML Confidence:  0.20629436282547928
+ML Label:  network_error
+ML Confidence:  0.19891585179914045
+ML Label:  network_error
+ML Confidence:  0.24486339256532766
+ML Label:  api_request
+ML Confidence:  0.25569944900716984
+ML Label:  network_error
+ML Confidence:  0.222390272501644
+ML Label:  network_error
+ML Confidence:  0.21271366964970834
+ML Label:  api_request
+ML Confidence:  0.27264910031826706
+ML Label:  api_request
+ML Confidence:  0.2257424391441307
+ML Label:  network_error
+ML Confidence:  0.23831273864676766
+ML Label:  api_request
+ML Confidence:  0.22981417509465124
+ML Label:  api_request
+ML Confidence:  0.1901155620043397
+ML Label:  network_error
+ML Confidence:  0.23915618030283703
+ML Label:  api_request
+ML Confidence:  0.22174636330257708
+ML Label:  api_request
+ML Confidence:  0.1832934145562577
+ML Label:  api_request
+ML Confidence:  0.23297750819379265
+ML Label:  api_request
+ML Confidence:  0.29982826673190105
+ML Label:  api_request
+ML Confidence:  0.21300309671467926
+ML Label:  network_error
+ML Confidence:  0.22018597755584168
+ML Label:  api_request
+ML Confidence:  0.25680263616983384
+ML Label:  network_error
+ML Confidence:  0.2805526865476235
+ML Label:  api_request
+ML Confidence:  0.26219014931539253
+ML Label:  api_request
+ML Confidence:  0.23950456076092433
+ML Label:  api_request
+ML Confidence:  0.22499992391770338
+ML Label:  network_error
+ML Confidence:  0.2916308055691429
+ML Label:  network_error
+ML Confidence:  0.2380529251466064
+ML Label:  api_request
+ML Confidence:  0.246909508270716
+ML Label:  api_request
+ML Confidence:  0.27588694460872953
+ML Label:  api_request
+ML Confidence:  0.19575674543428664
+ML Label:  api_request
+ML Confidence:  0.2779815409134681
+ML Label:  api_request
+ML Confidence:  0.20640696039626708
+ML Label:  network_error
+ML Confidence:  0.20301723097854016
+ML Label:  network_error
+ML Confidence:  0.2307570581967456
+ML Label:  network_error
+ML Confidence:  0.26849213210664474
+ML Label:  network_error
+ML Confidence:  0.24590771735223657
+ML Label:  network_error
+ML Confidence:  0.2448669283361053
+ML Label:  network_error
+ML Confidence:  0.2733603994190518
+ML Label:  network_error
+ML Confidence:  0.21325536275650095
+ML Label: Evaluating:  77%|███████▋  | 705/912 [01:47<00:20,  9.98it/s]Evaluating:  78%|███████▊  | 710/912 [01:47<00:15, 13.22it/s]Evaluating:  78%|███████▊  | 713/912 [01:49<00:38,  5.19it/s]Evaluating:  78%|███████▊  | 715/912 [01:50<00:37,  5.25it/s]Evaluating:  79%|███████▉  | 723/912 [01:50<00:21,  8.64it/s]Evaluating:  79%|███████▉  | 725/912 [01:50<00:22,  8.20it/s]Evaluating:  80%|████████  | 730/912 [01:51<00:18, 10.08it/s]Evaluating:  80%|████████  | 734/912 [01:51<00:13, 12.81it/s]Evaluating:  81%|████████  | 737/912 [01:52<00:35,  4.93it/s]Evaluating:  81%|████████  | 739/912 [01:53<00:34,  5.06it/s]Evaluating:  82%|████████▏ | 744/912 [01:53<00:24,  6.84it/s]Evaluating:  82%|████████▏ | 748/912 [01:53<00:17,  9.15it/s]Evaluating:  82%|████████▏ | 751/912 [01:54<00:16,  9.87it/s]Evaluating:  83%|████████▎ | 753/912 [01:54<00:16,  9.46it/s]Evaluating:  83%|████████▎ | 758/912 [01:54<00:10, 14.10it/s]Evaluating:  83%|████████▎ | 761/912 [01:56<00:31,  4.74it/s]Evaluating:  84%|████████▎ | 763/912 [01:56<00:30,  4.92it/s]Evaluating:  84%|████████▍ | 768/912 [01:56<00:21,  6.79it/s]Evaluating:  84%|████████▍ | 770/912 [01:56<00:18,  7.75it/s]Evaluating:  85%|████████▍ | 772/912 [01:57<00:17,  8.02it/s]Evaluating:  85%|████████▍ | 774/912 [01:57<00:17,  7.84it/s]Evaluating:  85%|████████▌ | 778/912 [01:59<00:36,  3.69it/s]Evaluating:  86%|████████▌ | 781/912 [01:59<00:29,  4.50it/s]Evaluating:  86%|████████▌ | 785/912 [02:00<00:21,  5.78it/s]Evaluating:  86%|████████▋ | 787/912 [02:00<00:24,  5.01it/s]Evaluating:  87%|████████▋ | 789/912 [02:00<00:20,  5.92it/s]Evaluating:  87%|████████▋ | 791/912 [02:00<00:17,  6.91it/s]Evaluating:  87%|████████▋ | 793/912 [02:01<00:14,  8.22it/s]Evaluating:  87%|████████▋ | 796/912 [02:01<00:11, 10.37it/s]Evaluating:  88%|████████▊ | 798/912 [02:01<00:09, 11.68it/s] network_error
+ML Confidence:  0.22092184730040632
+ML Label:  network_error
+ML Confidence:  0.29018320854918317
+ML Label:  api_request
+ML Confidence:  0.22178283263475962
+ML Label:  api_request
+ML Confidence:  0.25396872077588256
+ML Label:  network_error
+ML Confidence:  0.22992942176143782
+ML Label:  network_error
+ML Confidence:  0.24739554394975533
+ML Label:  api_request
+ML Confidence:  0.2769365096358795
+ML Label:  api_request
+ML Confidence:  0.19572536240421282
+ML Label:  api_request
+ML Confidence:  0.22123521978062904
+ML Label:  api_request
+ML Confidence:  0.21096538011232582
+ML Label:  network_error
+ML Confidence:  0.232172172512968
+ML Label:  network_error
+ML Confidence:  0.24153643504308622
+ML Label:  network_error
+ML Confidence:  0.2346306583057595
+ML Label:  network_error
+ML Confidence:  0.18495544272192785
+ML Label:  api_request
+ML Confidence:  0.2636377011609412
+ML Label:  network_error
+ML Confidence:  0.23035233881099398
+ML Label:  api_request
+ML Confidence:  0.19462449340044427
+ML Label:  network_error
+ML Confidence:  0.23286510404607796
+ML Label:  api_request
+ML Confidence:  0.2539129572017854
+ML Label:  api_request
+ML Confidence:  0.26569734455645283
+ML Label:  network_error
+ML Confidence:  0.28578314200457106
+ML Label:  network_error
+ML Confidence:  0.2344909407034804
+ML Label:  network_error
+ML Confidence:  0.23385888856967
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  network_request
+ML Confidence:  0.36573262087841457
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  api_request
+ML Confidence:  0.6872291005075006
+ML Label:  filesystem_error
+ML Confidence:  0.7639343277366412
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  network_error
+ML Confidence:  0.4466474798101643
+ML Label:  api_request
+ML Confidence:  0.3813135803181954
+ML Label:  block_received
+ML Confidence:  0.24453544443621492
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  api_request
+ML Confidence:  0.7280782774113597
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605859
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+ML Label:  network_error
+ML Confidence:  0.8187860117310009
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  filesystem_error
+ML Confidence:  1.0
+ML Label:  block_received
+ML Confidence:  0.2499405187474158
+ML Label:  network_request
+ML Confidence:  0.2495481928241041
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605859
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833196
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  api_request
+ML Confidence:  0.5619238025218404
+ML Label:  block_received
+ML Confidence:  0.2445354444362148
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625997
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  api_request
+ML Confidence:  0.582625853318942
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833193
+ML Label:  system_operation
+ML Confidence:  0.1558486717356562
+ML Label:  api_request
+ML Confidence:  0.5134256347247309
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  api_request
+ML Confidence:  0.6268924020965011
+ML Label:  api_request
+ML Confidence:  0.6721242759978948
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348143
+ML Label:  network_traffic
+ML Confidence:  0.5102443704805057
+ML Label:  network_request
+ML Confidence:  0.36573262087841435
+ML Label:  api_request
+ML Confidence:  0.5179832601515763
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_error
+ML Confidence:  0.4275321215740091
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  api_request
+ML Confidence:  0.514776110647509
+ML Label:  api_request
+ML Confidence:  0.33890420003524097
+ML Label:  api_request
+ML Confidence:  0.43325942025476416
+ML Label:  api_request
+ML Confidence:  0.6923790786695104
+ML Label:  network_activity
+ML Confidence:  0.46819246777447576
+ML Label:  filesystem_error
+ML Confidence:  0.4954878493347026
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228245
+{"label": "api_request", "confidence": 0.75, "explanation": "The log message indicates the reception of a data block with source and destination information, which is characteristic of a network communication or API-like data transfer process."}
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' suggests network activity, and 'terminating' in this context implies a network-related issue or disruption."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+{"label": "api_request", "confidence": 0.80, "explanation": "This log message appears to be a normal communication or data transfer within a system, potentially related to a distributed system or network service, without indicating an error or specific event like authentication or configuration issues. It describes receiving a block of data with source and destination information."}
+{"label": "api_request", "confidence": 0.70, "explanation": "Log indicates receiving a block, suggesting a data transfer or API interaction, but lacks specific error indicators for other categories."}
+ML Label:  network_traffic
+ML Confidence:  0.5766433030083009
+ML Label:  api_request
+ML Confidence:  0.5798724087335142
+{"label": "api_request", "confidence": 0.90, "explanation": "Indicates receipt of data, likely part of a larger data transfer or API operation."}
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to indicate the reception of data blocks, which is characteristic of normal network communication, potentially within an API or data transfer context. It doesn't directly indicate an error or a specific type of failure."}
+ML Label:  api_request
+ML Confidence:  0.5946200679761493
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283319
+{"label": "api_request", "confidence": 0.75, "explanation": "This log message describes receiving a block, which is a common event in data transfer or distributed systems. While not a standard HTTP API call, it represents a data ingress or communication event similar to an API request in a broader sense. It's more specific than a generic network event as it implies a structured data exchange."}
+ML Label:  service_request
+ML Confidence:  0.10379609130335506
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a system internal update or notification rather than a direct API call, but the structure is closer to an API-like interaction than other categories."}
+ML Label:  api_request
+ML Confidence:  0.4636364419264659
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates receiving a block with source and destination addresses, which is typical of network communication, likely related to an API or data transfer operation."}
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+```json
+{"label": "network_error", "confidence": 0.85, "explanation": "The term 'PacketResponder' and 'terminating' in relation to network packets suggests a network-related issue, possibly a dropped or interrupted connection."}
+```
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+{"label": "api_request", "confidence": 0.7, "explanation": "This message describes receiving a block of data with source and destination IP addresses and ports, which is typical of network communication related to data transfer or API-like interactions between services. It does not fit other specific categories like errors or authentication."}Evaluating:  88%|████████▊ | 800/912 [02:01<00:08, 13.03it/s]Evaluating:  88%|████████▊ | 804/912 [02:01<00:06, 17.52it/s]Evaluating:  89%|████████▊ | 808/912 [02:01<00:04, 21.98it/s]Evaluating:  89%|████████▉ | 811/912 [02:01<00:05, 19.53it/s]Evaluating:  89%|████████▉ | 814/912 [02:04<00:23,  4.09it/s]Evaluating:  90%|████████▉ | 817/912 [02:04<00:17,  5.28it/s]Evaluating:  90%|████████▉ | 819/912 [02:04<00:15,  6.19it/s]Evaluating:  90%|█████████ | 821/912 [02:04<00:12,  7.40it/s]Evaluating:  90%|█████████ | 825/912 [02:04<00:08, 10.52it/s]Evaluating:  91%|█████████ | 828/912 [02:04<00:07, 11.23it/s]Evaluating:  91%|█████████ | 830/912 [02:04<00:06, 12.28it/s]Evaluating:  92%|█████████▏| 835/912 [02:05<00:04, 16.15it/s]Evaluating:  92%|█████████▏| 838/912 [02:07<00:19,  3.88it/s]Evaluating:  92%|█████████▏| 840/912 [02:07<00:15,  4.62it/s]Evaluating:  92%|█████████▏| 842/912 [02:07<00:12,  5.40it/s]Evaluating:  93%|█████████▎| 845/912 [02:07<00:09,  6.87it/s]Evaluating:  93%|█████████▎| 847/912 [02:07<00:08,  8.10it/s]Evaluating:  93%|█████████▎| 849/912 [02:08<00:07,  8.85it/s]Evaluating:  93%|█████████▎| 851/912 [02:08<00:06,  9.85it/s]Evaluating:  94%|█████████▎| 853/912 [02:09<00:10,  5.40it/s]Evaluating:  94%|█████████▍| 856/912 [02:10<00:15,  3.50it/s]Evaluating:  94%|█████████▍| 857/912 [02:10<00:14,  3.78it/s]Evaluating:  94%|█████████▍| 858/912 [02:10<00:12,  4.23it/s]Evaluating:  94%|█████████▍| 860/912 [02:10<00:09,  5.45it/s]Evaluating:  95%|█████████▍| 864/912 [02:10<00:05,  9.38it/s]Evaluating:  95%|█████████▍| 866/912 [02:11<00:04, 10.55it/s]Evaluating:  95%|█████████▌| 869/912 [02:11<00:03, 13.42it/s]Evaluating:  96%|█████████▌| 872/912 [02:11<00:03, 12.16it/s]Evaluating:  96%|█████████▌| 874/912 [02:12<00:06,  6.10it/s]Evaluating:  96%|█████████▋| 878/912 [02:13<00:07,  4.30it/s]Evaluating:  96%|█████████▋| 879/912 [02:13<00:07,  4.43it/s]Evaluating:  97%|█████████▋| 883/912 [02:14<00:04,  6.30it/s]Evaluating:  97%|█████████▋| 888/912 [02:14<00:02,  9.31it/s]Evaluating:  98%|█████████▊| 892/912 [02:14<00:01, 12.42it/s]Evaluating:  98%|█████████▊| 895/912 [02:14<00:01, 11.57it/s]Evaluating:  98%|█████████▊| 897/912 [02:16<00:04,  3.54it/s]Evaluating:  99%|█████████▊| 899/912 [02:17<00:03,  4.01it/s]Evaluating:  99%|█████████▉| 901/912 [02:17<00:02,  4.65it/s]Evaluating:  99%|█████████▉| 905/912 [02:17<00:01,  6.91it/s]Evaluating: 100%|█████████▉| 909/912 [02:17<00:00,  8.93it/s]Evaluating: 100%|█████████▉| 911/912 [02:17<00:00,  9.19it/s]Evaluating: 100%|██████████| 912/912 [02:18<00:00,  6.57it/s]
+/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates receiving data which is part of a larger communication or data transfer, often associated with API interactions or service communication."}
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "This log message appears to describe the reception of a data block, which is typical of a normal operation within a system, possibly related to network or data transfer but not indicative of an error or specific failure type."}
+```
+ML Label:  api_request
+ML Confidence:  0.9599524868801788
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+{"label": "api_request", "confidence": 0.7, "explanation": "This message appears to be a log of receiving data blocks between network endpoints, which is a characteristic of an API or service interaction. It doesn't clearly fit other categories like errors, authentication, or configuration issues."}
+ML Label:  network_error
+ML Confidence:  0.3688417896378721
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  network_request
+ML Confidence:  0.46153153236233024
+{"label": "network_error", "confidence": 0.85, "explanation": "The log message mentions 'PacketResponder' and 'terminating', which often indicates network-related issues or premature termination of a network process."}
+ML Label:  api_request
+ML Confidence:  0.8464002964275127
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+```json
+{"label": "filesystem_error", "confidence": 0.75, "explanation": "This log message appears to be related to block management within a distributed file system (like HDFS), and while not a direct error, 'addStoredBlock' and subsequent updates can be related to underlying storage operations. It's the closest fit among the provided categories, as it's not clearly API, database, or network-related errors."}
+```
+ML Label:  network_error
+ML Confidence:  0.9059595553299071
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+{"label": "api_request", "confidence": 0.75, "explanation": "Log indicates reception of data blocks, likely part of a larger data transfer or API interaction, but lacks explicit error or authentication context. It's a common event in distributed systems or data processing. The source and destination IPs suggest network communication, but not necessarily an error."}
+ML Label:  api_request
+ML Confidence:  0.6744077102105486
+ML Label:  log_event
+ML Confidence:  0.10480829299315947
+ML Label:  api_request
+ML Confidence:  0.762257210305799
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  resource_exhaustion
+ML Confidence:  0.5875596497690936
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  api_request
+ML Confidence:  0.8630316289012646
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  network_traffic
+ML Confidence:  0.524182381440531
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  api_request
+ML Confidence:  0.4831415793016459
+ML Label:  api_request
+ML Confidence:  0.43453153142188805
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+ML Label:  network_message
+ML Confidence:  0.3243823689041712
+ML Label:  api_request
+ML Confidence:  0.778098464584132
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  api_request
+ML Confidence:  0.44709953525567186
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  network_error
+ML Confidence:  0.5872294808209424
+ML Label:  network_traffic
+ML Confidence:  0.4651134569625855
+ML Label:  system_operation
+ML Confidence:  0.1558486717356562
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.46010673592332874
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833193
+ML Label:  service_request
+ML Confidence:  0.10379609130335504
+ML Label:  api_request
+ML Confidence:  0.6211876059033667
+ML Label:  network_traffic
+ML Confidence:  0.6024414811839626
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  api_request
+ML Confidence:  0.45323410251239893
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  network_request
+ML Confidence:  0.24954819282410404
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  api_request
+ML Confidence:  0.4748246533551385
+ML Label:  filesystem_error
+ML Confidence:  0.9372957623605859
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228244
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  api_request
+ML Confidence:  0.5060508830585213
+ML Label:  api_request
+ML Confidence:  0.6971566256425159
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  api_request
+ML Confidence:  0.6607344085354755
+ML Label:  network_error
+ML Confidence:  0.9059595553299072
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_error
+ML Confidence:  0.3314941683618077
+ML Label:  api_request
+ML Confidence:  0.7183235767693725
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.4749095039543427
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  api_request
+ML Confidence:  0.7299371753921017
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  api_request
+ML Confidence:  0.7907852023298126
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  api_request
+ML Confidence:  0.3829787664724404
+ML Label:  api_request
+ML Confidence:  0.5619238025218405
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  authentication_success
+ML Confidence:  1.0
+ML Label:  log_event
+ML Confidence:  0.10480829299315948
+ML Label:  api_request
+ML Confidence:  0.5705036632946578
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  api_request
+ML Confidence:  0.48734060270346724
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  network_traffic
+ML Confidence:  0.5332296113924121
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965616
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833193
+ML Label:  resource_exhaustion
+ML Confidence:  0.597649351633399
+ML Label:  filesystem_error
+ML Confidence:  0.763934327736641
+ML Label:  api_request
+ML Confidence:  0.5258727450492662
+ML Label:  block_received
+ML Confidence:  0.24994051874741582
+ML Label:  api_request
+ML Confidence:  0.6063339832442184
+ML Label:  api_request
+ML Confidence:  0.6459507479453092
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+
+========================================
+ HYBRID SYSTEM EVALUATION (OVERALL)
+========================================
+                        precision    recall  f1-score   support
+
+             api_error       0.00      0.00      0.00        23
+           api_request       0.92      0.14      0.24       407
+authentication_failure       1.00      1.00      1.00        30
+authentication_success       1.00      1.00      1.00        26
+   configuration_error       0.00      0.00      0.00        23
+        database_error       0.00      0.00      0.00        22
+      filesystem_error       0.98      0.34      0.50       140
+                 label       0.00      0.00      0.00         1
+         network_error       0.99      0.38      0.55       177
+   resource_exhaustion       0.00      0.00      0.00        20
+        security_alert       1.00      1.00      1.00        22
+       service_timeout       0.00      0.00      0.00        21
+               unknown       0.00      0.00      0.00         0
+
+              accuracy                           0.27       912
+             macro avg       0.45      0.30      0.33       912
+          weighted avg       0.84      0.27      0.37       912
+
+
+========================================
+ ACCURACY BY LAYER
+========================================
+Layer: LLM        | Samples: 715   | Accuracy: 7.13%
+Layer: ML         | Samples: 125   | Accuracy: 100.00%
+Layer: REGEX      | Samples: 72    | Accuracy: 100.00%
+
+========================================
+ LAYER USAGE BREAKDOWN
+========================================
+llm      715
+ml       125
+regex     72
+Name: count, dtype: int64
+
+========================================
+ CONFUSION MATRIX
+========================================
+[[  0   0   0   0   0   0   0   0   0   0   0   0  23]
+ [  0  55   0   0   0   0   1   0   0   0   0   0 351]
+ [  0   0  30   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0  26   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0  23]
+ [  0   0   0   0   0   0   0   0   0   0   0   0  22]
+ [  0   4   0   0   0   0  47   0   1   0   0   0  88]
+ [  0   1   0   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0  68   0   0   0 109]
+ [  0   0   0   0   0   0   0   0   0   0   0   0  20]
+ [  0   0   0   0   0   0   0   0   0   0  22   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0  21]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0]]
+
+Saved confusion matrix image → confusion_matrix.png
+

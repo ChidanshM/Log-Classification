@@ -1,0 +1,291 @@
+[WARN] Columns 'LogText' and 'Label' not found. Assuming the CSV has NO HEADER.
+Initializing classifier...
+
+Loaded 912 evaluation samples.
+Starting parallel evaluation with 16 workers...
+Evaluating:   0%|          | 0/912 [00:00<?, ?it/s]Evaluating:   0%|          | 1/912 [00:00<05:45,  2.64it/s]Evaluating:   1%|          | 7/912 [00:00<00:52, 17.30it/s]Evaluating:   1%|▏         | 12/912 [00:00<00:34, 25.95it/s]Evaluating:   2%|▏         | 16/912 [00:01<01:05, 13.60it/s]Evaluating:   3%|▎         | 26/912 [00:01<00:33, 26.79it/s]Evaluating:   4%|▎         | 32/912 [00:01<00:27, 32.57it/s]Evaluating:   4%|▍         | 38/912 [00:01<00:23, 36.80it/s]Evaluating:   5%|▍         | 44/912 [00:01<00:36, 23.92it/s]ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  api_request
+ML Confidence:  0.4758119131757486
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  network_traffic
+ML Confidence:  0.5293627608699883
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  api_request
+ML Confidence:  0.5507053664059258
+ML Label:  api_request
+ML Confidence:  0.4708703830124843
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_message
+ML Confidence:  0.32438236890417116
+ML Label:  network_error
+ML Confidence:  0.21772859362605107
+ML Label:  api_request
+ML Confidence:  0.4317011886197089
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  api_request
+ML Confidence:  0.4375360219758816
+ML Label:  api_request
+ML Confidence:  0.5026421413092017
+ML Label:  block_received
+ML Confidence:  0.24994051874741569
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  network_error
+ML Confidence:  0.7712761193330419
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  api_request
+ML Confidence:  0.5882383276905039
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228242
+ML Label:  network_activity
+ML Confidence:  0.4995332049960071
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965614
+ML Label:  api_request
+ML Confidence:  0.4265293037045331
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  network_error
+ML Confidence:  0.8955183946211804
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  block_received
+ML Confidence:  0.24453544443621492
+{"label": "api_request", "confidence": 0.80, "explanation": "Log indicates reception of data, likely part of a larger data transfer or API operation, but without explicit error or authentication indicators."}
+{"label": "api_request", "confidence": 0.75, "explanation": "The log indicates receiving data blocks, which is a common operation in data processing or API-driven systems. It doesn't explicitly denote an error or a security concern, and the format suggests a normal operation."}
+{"label": "api_request", "confidence": 0.65, "explanation": "Generic log message, most likely an API request or general event log. Assuming API request with low confidence."}
+{"label": "api_request", "confidence": 0.85, "explanation": "Indicates reception of data, likely part of a larger data transfer or API operation."}
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates a data transfer, likely part of a larger system operation, but not explicitly an error or authentication event."}
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a normal network communication related to data transfer, likely part of a larger service interaction. It doesn't fit clearly into error categories or specific event types like authentication or configuration."}
+{"label": "api_request", "confidence": 0.7, "explanation": "Log message indicates receipt of data, potentially part of a larger data transfer or API interaction. Not clearly an error or success, but a data-related event."}
+{"label": "api_request", "confidence": 0.7, "explanation": "This log indicates data transmission between network endpoints, which is characteristic of an API or service communication. While not a direct HTTP request, it represents a network-level interaction often associated with API calls."}
+ML Label:  network_traffic
+ML Confidence:  0.5444295213441868
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+{"label": "api_request", "confidence": 0.7, "explanation": "The log message describes receiving a block of data from a specific IP address, which is characteristic of a data transfer operation often associated with API interactions or service-to-service communication. It does not indicate an error, authentication issue, or resource problem."}
+ML Label:  authentication_success
+ML Confidence:  1.0
+{"label": "api_request", "confidence": 0.70, "explanation": "This log message appears to be a normal operational message, possibly related to network data transfer or block processing within a distributed system. It doesn't fit the error or authentication categories, and 'api_request' is the most general category for such operational messages."}
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833182
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+{"label": "api_request", "confidence": 0.75, "explanation": "Indicates receiving data (a block), which is a form of data transfer similar to an API request in a distributed system."}
+{"label": "api_request", "confidence": 0.75, "explanation": "This log appears to be a normal data reception event, potentially from an API or internal service, not indicating an error or specific event like authentication or configuration."}
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a normal data transfer or network communication event, possibly related to a distributed system or peer-to-peer protocol, rather than an error or authentication event. It describes receiving a block from a source IP and port to a destination IP and port, which is characteristic of routine data handling within an API or service."}
+ML Label:  name_system_operation
+ML Confidence:  0.1055300454334814
+{"label": "api_request", "confidence": 0.75, "explanation": "This log indicates receiving a data block from a specific IP address, which is typical of a data transfer request within a system, similar to how API endpoints handle data transfer."}
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  log_event
+ML Confidence:  0.10480829299315941
+ML Label:  filesystem_error
+ML Confidence:  0.9413204182274229
+ML Label:  network_error
+ML Confidence:  0.8955183946211802
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+```json
+{"label": "api_request", "confidence": 0.7, "explanation": "This log appears to be a normal network communication log, possibly related to data transfer or service interaction. It does not fit the specific error or authentication categories and can be broadly categorized as a regular operational request or data reception event."}
+```
+{"label": "api_request", "confidence": 0.80, "explanation": "Indicates receipt of a data block, which is a type of request/transfer that can be associated with API interactions, though not a typical HTTP verb."}
+ML Label:  api_request
+ML Confidence:  0.6132503273507046
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  api_request
+ML Confidence:  0.4713390610937487
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  block_received
+ML Confidence:  0.244535444436215
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627414
+ML Label:  network_error
+ML Confidence:  0.8187860117310011
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965615
+ML Label:  api_request
+ML Confidence:  0.4194316923021855
+ML Label:  network_request
+ML Confidence:  0.3696606726963067
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333989
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  filesystem_error
+ML Confidence:  0.9401863559627415
+ML Label:  resource_exhaustion
+ML Confidence:  0.6481822420364755
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+{"label": "api_request", "confidence": 0.85, "explanation": "This log indicates the reception of a data block, which is a common operation within a distributed system's API or internal communication, and doesn't explicitly signal an error or specific event like authentication or configuration issues."}
+ML Label:  api_request
+ML Confidence:  0.6640572242686693
+ML Label: Evaluating:   5%|▍         | 45/912 [00:03<01:14, 11.60it/s]
+Traceback (most recent call last):
+  File "/home/adhyeta/0zProject/Log-Classification/scripts/eval_pl.py", line 83, in evaluate
+    for future in tqdm(concurrent.futures.as_completed(futures), total=len(records), desc="Evaluating"):
+                  ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/concurrent/futures/_base.py", line 243, in as_completed
+    waiter.event.wait(wait_timeout)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/threading.py", line 659, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/threading.py", line 359, in wait
+    waiter.acquire()
+    ~~~~~~~~~~~~~~^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/adhyeta/0zProject/Log-Classification/scripts/eval_pl.py", line 161, in <module>
+    evaluate(args.csv, args.text_col, args.label_col)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adhyeta/0zProject/Log-Classification/scripts/eval_pl.py", line 77, in evaluate
+    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/concurrent/futures/_base.py", line 647, in __exit__
+    self.shutdown(wait=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/concurrent/futures/thread.py", line 238, in shutdown
+    t.join()
+    ~~~~~~^^
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/threading.py", line 1092, in join
+    self._handle.join(timeout)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyboardInterrupt
+Exception ignored on threading shutdown:
+Traceback (most recent call last):
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/threading.py", line 1534, in _shutdown
+    atexit_call()
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/threading.py", line 1505, in <lambda>
+    _threading_atexits.append(lambda: func(*arg, **kwargs))
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/adhyeta/miniconda3/envs/cis600anlp/lib/python3.13/threading.py", line 1092, in join
+    self._handle.join(timeout)
+KeyboardInterrupt: 
+ block_received
+ML Confidence:  0.2445354444362149
+ML Label:  api_error
+ML Confidence:  0.24840329879580128
+ML Label:  network_error
+ML Confidence:  0.818786011731001
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  network_data_transfer
+ML Confidence:  0.14946467550999654
+ML Label:  service_request
+ML Confidence:  0.10379609130335499
+ML Label:  api_request
+ML Confidence:  0.6585390112961842
+ML Label:  network_error
+ML Confidence:  0.49232873400858657
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625995
+ML Label:  network_error
+ML Confidence:  0.8955183946211805
+ML Label:  api_request
+ML Confidence:  0.5269391089411346
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  api_request
+ML Confidence:  0.465633083996265
+ML Label:  api_request
+ML Confidence:  0.5146780504217631
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024634
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  service_request
+ML Confidence:  0.10379609130335501
+ML Label:  block_received
+ML Confidence:  0.2499405187474157
+ML Label:  api_request
+ML Confidence:  0.6804784404830655
+ML Label:  api_request
+ML Confidence:  0.36182612440268214
+ML Label:  log_event
+ML Confidence:  0.10480829299315944
+ML Label:  api_request
+ML Confidence:  0.47128696873783965
+ML Label:  resource_exhaustion
+ML Confidence:  0.5976493516333992
+ML Label:  blockchain_data
+ML Confidence:  0.1942693826283318
+ML Label:  api_request
+ML Confidence:  0.5158892128476892
+ML Label:  network_error
+ML Confidence:  0.7712761193330416
+ML Label:  network_data_transfer
+ML Confidence:  0.1494646755099965
+ML Label:  name_system_operation
+ML Confidence:  0.10553004543348146
+ML Label:  api_request
+ML Confidence:  0.5766590869045808
+ML Label:  filesystem_error
+ML Confidence:  0.9112293411625996
+ML Label:  api_request
+ML Confidence:  0.6080071323488346
+ML Label:  resource_exhaustion
+ML Confidence:  0.5357119983965617
+ML Label:  block_received
+ML Confidence:  0.2445354444362149
+ML Label:  resource_exhaustion
+ML Confidence:  0.6424682859024632
+ML Label:  block_received
+ML Confidence:  0.24994051874741577
+ML Label:  filesystem_error
+ML Confidence:  0.9342515919267724
+ML Label:  network_error
+ML Confidence:  0.4961617561487104
+ML Label:  api_request
+ML Confidence:  0.4907980730126362
+ML Label:  api_request
+ML Confidence:  0.46282424766263763
+ML Label:  blockchain_data
+ML Confidence:  0.19426938262833185
+ML Label:  api_request
+ML Confidence:  0.4918713510640518
+ML Label:  network_error
+ML Confidence:  0.8187860117310012
+ML Label:  log_event
+ML Confidence:  0.10480829299315939
+ML Label:  resource_exhaustion
+ML Confidence:  0.5977740104228243
+terminate called without an active exception

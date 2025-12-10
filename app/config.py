@@ -4,8 +4,8 @@ class Settings(BaseSettings):
 	model_config = SettingsConfigDict(env_file=".env")
 
 	#classification thresholds
-	REGEX_CONFIDENCE: float = 0.95
-	ML_CONFIDENCE: float = 0.70
+	REGEX_CONFIDENCE: float = 0.987
+	ML_CONFIDENCE: float = 0.30
 
 	# model paths
 	LR_MODEL_PATH: str = "models/lr_model.pkl"
